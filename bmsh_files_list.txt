@@ -1,13 +1,13 @@
 ——————作者——————
  
-2020.05.01  樂卟嘶屬
+2020.06.01  樂卟嘶屬
 https://jq.qq.com/?k=5WukPKv&gc=614255348
  
  
  
 ——————教程——————
  
-请查看200501.兔人补丁中的《README.TXT》
+请查看200601.兔人补丁中的《README.TXT》
  
  
  
@@ -40,9 +40,9 @@ https://jq.qq.com/?k=5WukPKv&gc=614255348
  
 ——————补丁——————
  
-说明：(补丁包)200501.兔人补丁
-文件名：bmsh-patch-GIT200501.zip
-下载链接：https://github.com/cnzixn/bmsh-patch/archive/GIT200501.zip
+说明：(补丁包)200601.兔人补丁
+文件名：bmsh-patch-GIT200601.zip
+下载链接：https://github.com/cnzixn/bmsh-patch/archive/GIT200601.zip
  
 说明：(补丁包)999999.授权补丁
 文件名：bmsh-patch-GIT999999.zip
@@ -1248,7 +1248,7 @@ https://jq.qq.com/?k=5WukPKv&gc=614255348
 文件名：bmsh-mods6-GIT0299.zip
 下载链接：https://github.com/cnzixn/bmsh-mods6/archive/GIT0299.zip
  
-说明：(模组)0300.兔人优化包
+说明：(模组)0300.机器范围显示
 文件名：bmsh-mods6-GIT0300.zip
 下载链接：https://github.com/cnzixn/bmsh-mods6/archive/GIT0300.zip
  
