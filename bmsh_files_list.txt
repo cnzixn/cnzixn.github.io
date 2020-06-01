@@ -96,7 +96,7 @@ https://jq.qq.com/?k=5WukPKv&gc=614255348
 文件名：bmsh-mods1-GIT0011.zip
 下载链接：https://github.com/cnzixn/bmsh-mods1/archive/GIT0011.zip
  
-说明：(模组)0012.制作齿轮
+说明：(模组)0012.解锁全部人物
 文件名：bmsh-mods1-GIT0012.zip
 下载链接：https://github.com/cnzixn/bmsh-mods1/archive/GIT0012.zip
  
