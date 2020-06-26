@@ -69,8 +69,7 @@ function main() {
 		bmsay
 		case $input in
 		[1])
-			bmsay "小黑  [1.0]  樂不思蜀" 33m 0
-
+			bmsay "小黑  [1.2]  樂不思蜀" 33m 0
 			bmsay "  1.输入正确选项，我会帮你进行相应操作。" 34m 0
 			bmsay "  2.什么都不输入，我会帮你进行“ * ”操作。" 34m 0
 			bmsay "  3.输入错误选项，我会帮你进行“ * ”操作。" 34m 0
@@ -444,6 +443,7 @@ function rm_to_obb() {
 		else
 			bmsay "移除“全部”已安装文失败." 31m
 		fi
+		return $?
 	fi
 
 	ids=$(echo "$*" )
@@ -602,8 +602,9 @@ function add_to_apk() {
 		main
 	fi
 
-	rm -rf assets patch META-INF TEMP.APK /sdcard/船难_小黑*.APK
+	
 	bmsay "移动BMSH200601.APP..." 32m
+	rm -rf assets patch META-INF TEMP.APK /sdcard/船难_小黑*.APK
 	mv "BMSH200601_SIGN.APK" "$app_rename"
 	if test "$?" -eq "0"; then
 		bmsay "移动BMSH200601.APP成功." 32m
