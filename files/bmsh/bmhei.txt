@@ -68,7 +68,8 @@ function main() {
 		bmsay "  提示：输入选项并“回车”。\n" 33m 0
 		bmsay "你的输入：" 33m 0
 		read input 
-		echo		case $input in
+		echo
+		case $input in
 		[1])
 			bmsay "小黑  [$BMVER]  樂不思蜀\n" 33m 0
 			bmsay "  1.输入正确选项，我会帮你进行相应操作。\n" 34m 0
@@ -88,6 +89,7 @@ function main() {
 		esac
 	done
 	echo
+
 	while true; do
 		bmsay "2.你想要“获取”小黑专用版？\n" 33m 0
 		bmsay "  1.是的，我还没安装游戏。\n" 33m 0
@@ -95,7 +97,8 @@ function main() {
 		bmsay "  3.对不起，我不想继续了。\n" 33m 0
 		bmsay "你的输入：" 33m 0
 		read input 
-		echo		case $input in
+		echo
+		case $input in
 		[1])
 			add_to_apk
 			break
@@ -111,6 +114,7 @@ function main() {
 		esac
 	done
 	echo
+
 	while true; do
 		bmsay "3.你想要“安装”一些文件么？\n" 33m 0
 		bmsay "  1.是的，快帮我安装一下。\n" 33m 0
@@ -118,12 +122,14 @@ function main() {
 		bmsay "  3.对不起，我不想继续了。\n" 33m 0
 		bmsay "你的输入：" 33m 0
 		read input 
-		echo		case $input in
+		echo
+		case $input in
 		[1])
 			bmsay "请回复它们的编号，例如：1 22 333 ...\n" 33m 0
 			bmsay "你的输入：" 33m 0
 			read input 
-			echo			add_to_obb "$input"
+			echo
+			add_to_obb "$input"
 			break
 			;;
 		[3])
@@ -137,6 +143,7 @@ function main() {
 		esac
 	done
 	echo
+
 	while true; do
 		bmsay "4.你想要“移除”一些文件么？\n" 33m 0
 		bmsay "  1.是的，快帮我移除它们。\n" 33m 0
@@ -144,7 +151,8 @@ function main() {
 		bmsay "  3.对不起，我不想继续了。\n" 33m 0
 		bmsay "你的输入：" 33m 0
 		read input 
-		echo		case $input in
+		echo
+		case $input in
 		[1])
 			bmsay "请回复它们的编号，例如：1 22 333 ...\n" 33m 0
 			bmsay "你的输入：" 33m 0
@@ -163,6 +171,7 @@ function main() {
 		esac
 	done
 	echo
+
 	while true; do
 		bmsay "5.你想要“分享”给朋友么？\n" 33m 0
 		bmsay "  1.是的，我朋友也想要玩。\n" 33m 0
@@ -170,7 +179,8 @@ function main() {
 		bmsay "  3.对不起，我不想继续了。\n" 33m 0
 		bmsay "你的输入：" 33m 0
 		read input 
-		echo		case $input in
+		echo
+		case $input in
 		[1])
 			add_to_apk 0
 			break
@@ -186,6 +196,7 @@ function main() {
 		esac
 	done
 	echo
+
 	main
 
 }
