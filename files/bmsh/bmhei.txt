@@ -59,26 +59,25 @@ function main() {
 
 	while true; do
 		clear
-		bmsay "1.我是小黑，需要我帮忙么？" 33m 0
-		bmsay "  1.我是新手..." 33m 0
-		bmsay " *2.嗯，请你帮帮我..." 33m 0
-		bmsay "  3.对不起，我不想继续了。" 33m 0
-		bmsay "  提示：输入选项并“回车”。" 33m 0
+		bmsay "1.我是小黑，需要我帮忙么？\n" 33m 0
+		bmsay "  1.我是新手...\n" 33m 0
+		bmsay " *2.嗯，请你帮帮我...\n" 33m 0
+		bmsay "  3.对不起，我不想继续了。\n" 33m 0
+		bmsay "  提示：输入选项并“回车”。\n" 33m 0
 		bmsay "你的输入：" 33m 0
 		read input 
-		bmsay
-		case $input in
+		echo		case $input in
 		[1])
-			bmsay "小黑  [1.2]  樂不思蜀" 33m 0
-			bmsay "  1.输入正确选项，我会帮你进行相应操作。" 34m 0
-			bmsay "  2.什么都不输入，我会帮你进行“ * ”操作。" 34m 0
-			bmsay "  3.输入错误选项，我会帮你进行“ * ”操作。" 34m 0
-			bmsay "你记住了吗？" 33m 0
+			bmsay "小黑  [1.2]  樂不思蜀\n" 33m 0
+			bmsay "  1.输入正确选项，我会帮你进行相应操作。\n" 34m 0
+			bmsay "  2.什么都不输入，我会帮你进行“ * ”操作。\n" 34m 0
+			bmsay "  3.输入错误选项，我会帮你进行“ * ”操作。\n" 34m 0
+			bmsay "你记住了吗？\n" 33m 0
 			pause
 			;;
 		[3])
 			clear
-			bmsay "小黑希望下次能帮到你！" 33m 0
+			bmsay "小黑希望下次能帮到你！\n" 33m 0
 			exit 99
 			;;
 		*)
@@ -86,24 +85,22 @@ function main() {
 			;;
 		esac
 	done
-	bmsay
-
+	echo
 	while true; do
-		bmsay "2.你想要“获取”小黑专用版？" 33m 0
-		bmsay "  1.是的，我还没安装游戏。" 33m 0
-		bmsay " *2.不用，我想进行下一步。" 33m 0
-		bmsay "  3.对不起，我不想继续了。" 33m 0
+		bmsay "2.你想要“获取”小黑专用版？\n" 33m 0
+		bmsay "  1.是的，我还没安装游戏。\n" 33m 0
+		bmsay " *2.不用，我想进行下一步。\n" 33m 0
+		bmsay "  3.对不起，我不想继续了。\n" 33m 0
 		bmsay "你的输入：" 33m 0
 		read input 
-		bmsay
-		case $input in
+		echo		case $input in
 		[1])
 			add_to_apk
 			break
 			;;
 		[3])
 			clear
-			bmsay "小黑希望下次能帮到你！" 33m 0
+			bmsay "小黑希望下次能帮到你！\n" 33m 0
 			exit 99
 			;;
 		*)
@@ -111,28 +108,25 @@ function main() {
 			;;
 		esac
 	done
-	bmsay
-
+	echo
 	while true; do
-		bmsay "3.你想要“安装”一些文件么？" 33m 0
-		bmsay "  1.是的，快帮我安装一下。" 33m 0
-		bmsay " *2.不用，我想进行下一步。" 33m 0
-		bmsay "  3.对不起，我不想继续了。" 33m 0
+		bmsay "3.你想要“安装”一些文件么？\n" 33m 0
+		bmsay "  1.是的，快帮我安装一下。\n" 33m 0
+		bmsay " *2.不用，我想进行下一步。\n" 33m 0
+		bmsay "  3.对不起，我不想继续了。\n" 33m 0
 		bmsay "你的输入：" 33m 0
 		read input 
-		bmsay
-		case $input in
+		echo		case $input in
 		[1])
-			bmsay "请回复它们的编号，例如：1 22 333 ..." 33m 0
+			bmsay "请回复它们的编号，例如：1 22 333 ...\n" 33m 0
 			bmsay "你的输入：" 33m 0
 			read input 
-			bmsay
-			add_to_obb "$input"
+			echo			add_to_obb "$input"
 			break
 			;;
 		[3])
 			clear
-			bmsay "小黑希望下次能帮到你！" 33m 0
+			bmsay "小黑希望下次能帮到你！\n" 33m 0
 			exit 99
 			;;
 		*)
@@ -140,19 +134,17 @@ function main() {
 			;;
 		esac
 	done
-	bmsay
-
+	echo
 	while true; do
-		bmsay "4.你想要“移除”一些文件么？" 33m 0
-		bmsay "  1.是的，快帮我移除它们。" 33m 0
-		bmsay " *2.不用，我想进行下一步。" 33m 0
-		bmsay "  3.对不起，我不想继续了。" 33m 0
+		bmsay "4.你想要“移除”一些文件么？\n" 33m 0
+		bmsay "  1.是的，快帮我移除它们。\n" 33m 0
+		bmsay " *2.不用，我想进行下一步。\n" 33m 0
+		bmsay "  3.对不起，我不想继续了。\n" 33m 0
 		bmsay "你的输入：" 33m 0
 		read input 
-		bmsay
-		case $input in
+		echo		case $input in
 		[1])
-			bmsay "请回复它们的编号，例如：1 22 333 ..." 33m 0
+			bmsay "请回复它们的编号，例如：1 22 333 ...\n" 33m 0
 			bmsay "你的输入：" 33m 0
 			read input 
 			rm_to_obb "$input"
@@ -160,7 +152,7 @@ function main() {
 			;;
 		[3])
 			clear
-			bmsay "小黑希望下次能帮到你！" 33m 0
+			bmsay "小黑希望下次能帮到你！\n" 33m 0
 			exit 99
 			;;
 		*)
@@ -168,24 +160,22 @@ function main() {
 			;;
 		esac
 	done
-	bmsay
-
+	echo
 	while true; do
-		bmsay "5.你想要“分享”给朋友么？" 33m 0
-		bmsay "  1.是的，我朋友也想要玩。" 33m 0
-		bmsay " *2.不用，我想进行下一步。" 33m 0
-		bmsay "  3.对不起，我不想继续了。" 33m 0
+		bmsay "5.你想要“分享”给朋友么？\n" 33m 0
+		bmsay "  1.是的，我朋友也想要玩。\n" 33m 0
+		bmsay " *2.不用，我想进行下一步。\n" 33m 0
+		bmsay "  3.对不起，我不想继续了。\n" 33m 0
 		bmsay "你的输入：" 33m 0
 		read input 
-		bmsay
-		case $input in
+		echo		case $input in
 		[1])
 			add_to_apk 0
 			break
 			;;
 		[3])
 			clear
-			bmsay "小黑希望下次能帮到你！" 33m 0
+			bmsay "小黑希望下次能帮到你！\n" 33m 0
 			exit 99
 			;;
 		*)
@@ -193,8 +183,7 @@ function main() {
 			;;
 		esac
 	done
-	bmsay
-
+	echo
 	main
 
 }
@@ -210,14 +199,11 @@ function bmsay() {
 	if test "$3" = "0"; then
 		bmsh=""
 	fi
-	printf "\033[""$code""$bmsh""$1""\033[0m\n"
-	if test "$4"; then
-		sleep $4
-	fi
+	printf "\033[""$code""$bmsh""$1""\033[0m"
 }
 
 function pause() {
-	bmsay "按回车继续..." 34m 0
+	bmsay "按回车继续...\n" 34m 0
 	read -s -n 1 press
 }
 
@@ -256,7 +242,7 @@ function get_file_github() {
 		if test "$2"; then
 			file="$2"
 		fi
-		wget -O "$file" -N "$url"
+		wget -O "$file" "$url"
 		return $?
 	fi
 }
@@ -271,12 +257,12 @@ difftime=$(expr $currenttime - $lasttime)
 	if test "$difftime" -gt 18000; then
 		echo "获取最新文件bmhei.txt"
 		cd /data/data/com.termux/files/home
-		wget -O ".bmhei.txt" -N "https://cnzixn.github.io/files/bmsh/bmhei.txt"
+		wget -O ".bmhei.txt" "https://cnzixn.github.io/files/bmsh/bmhei.txt"
 		if test "$?" -ne "0"; then
 			printf "获取最新文件bmhei.txt失败."
 			exit 99
 		else
-			cp -r ".bmhei.txt" $PREFIX/bin/hei
+			cp -rf ".bmhei.txt" $PREFIX/bin/hei
 		fi
 	fi
 
@@ -290,18 +276,18 @@ function bmsh_sw_key_exist() {
 	size=$(get_file_size "$bmsh_sw_key")
 	if test "$size" -eq "1397"; then
 		#BMSH200601.KEY已存在
-		bmsay "获取BMSH200601.KEY成功." 32m
+		bmsay "获取BMSH200601.KEY成功.\n" 32m
 		cp $bmsh_sw_key /sdcard/MT2/keys/
 		return 0
 	else
-		bmsay "获取BMSH200601.KEY..." 33m
-		wget -O "BMSH200601.KEY" -N "https://cnzixn.github.io/files/bmsh/bmsh_sw.key"
+		bmsay "获取BMSH200601.KEY...\n" 33m
+		wget -O "BMSH200601.KEY" "https://cnzixn.github.io/files/bmsh/bmsh_sw.key"
 		if test "$?" -eq "0"; then
-			bmsay "获取BMSH200601.KEY成功." 32m
+			bmsay "获取BMSH200601.KEY成功.\n" 32m
 			cp $bmsh_sw_key /sdcard/MT2/keys/
 			return 0
 		else
-			bmsay "获取BMSH200601.KEY失败." 31m
+			bmsay "获取BMSH200601.KEY失败.\n" 31m
 			pause
 			main
 		fi
@@ -315,18 +301,18 @@ function bmsh_sw_jks_exist() {
 	size=$(get_file_size "$bmsh_sw_jks")
 	if test "$size" -eq "1286"; then
 		#BMSH200601.JKS已存在
-		bmsay "获取BMSH200601.JKS成功." 32m
+		bmsay "获取BMSH200601.JKS成功.\n" 32m
 		cp $bmsh_sw_jks /sdcard/MT2/jks/
 		return 0
 	else
-		bmsay "获取BMSH200601.JKS..." 33m
-		wget -O "BMSH200601.JKS" -N "https://cnzixn.github.io/files/bmsh/bmsh_sw.jks"
+		bmsay "获取BMSH200601.JKS...\n" 33m
+		wget -O "BMSH200601.JKS" "https://cnzixn.github.io/files/bmsh/bmsh_sw.jks"
 		if test "$?" -eq "0"; then
-			bmsay "获取BMSH200601.JKS成功." 32m
+			bmsay "获取BMSH200601.JKS成功.\n" 32m
 			cp $bmsh_sw_jks /sdcard/MT2/jks/
 			return 0
 		else
-			bmsay "获取BMSH200601.JKS失败." 31m
+			bmsay "获取BMSH200601.JKS失败.\n" 31m
 			pause
 			main
 		fi
@@ -340,17 +326,17 @@ function bmsh_sw_apk_exist() {
 	size=$(get_file_size "$bmsh_sw_apk")
 	if test "$size" -eq "6880098"; then
 		#BMSH200601.APP已存在
-		bmsay "获取BMSH200601.APP成功." 32m
+		bmsay "获取BMSH200601.APP成功.\n" 32m
 		return 0
 	else
-		bmsay "获取BMSH200601.APP..." 33m
+		bmsay "获取BMSH200601.APP...\n" 33m
 		#https://t.cn/A6LjRekn
-		wget -O "BMSH200601.APP" -N "https://sj.71acg.com/hykb/201911/20191126jhht1.27.apk"
+		wget -O "BMSH200601.APP" "https://sj.71acg.com/hykb/201911/20191126jhht1.27.apk"
 		if test "$?" -eq "0"; then
-			bmsay "获取BMSH200601.APP成功." 32m
+			bmsay "获取BMSH200601.APP成功.\n" 32m
 			return 0
 		else
-			bmsay "获取BMSH200601.APP失败." 31m
+			bmsay "获取BMSH200601.APP失败.\n" 31m
 			pause
 			main
 		fi
@@ -364,7 +350,7 @@ function bmsh_sw_obb_exist() {
 	size=$(get_file_size "$bmsh_sw_obb")
 	if test "$size" -eq "521631690"; then
 		#BMSH200601.OBB已存在
-		bmsay "获取BMSH200601.OBB成功." 32m
+		bmsay "获取BMSH200601.OBB成功.\n" 32m
 		return 0
 	else
 		SAVEIFS=$IFS
@@ -374,21 +360,21 @@ function bmsh_sw_obb_exist() {
 			size=$(get_file_size "$bmsh_sw_obb")
 			if test "$size" -eq "521631690"; then
 				#BMSH200601.OBB已存在
-				bmsay "获取BMSH200601.OBB成功." 32m
+				bmsay "获取BMSH200601.OBB成功.\n" 32m
 				mv $bmsh_sw_obb BMSH200601.OBB
 				return 0
 			fi
 		done
 		IFS=$SAVEIFS
 
-		bmsay "获取BMSH200601.OBB..." 33m
+		bmsay "获取BMSH200601.OBB...\n" 33m
 		#https://t.cn/A6LjRD2i
-		wget -O "BMSH200601.OBB" -N "https://sj.71acg.com/hykb/shujubao/main.50.com.kleientertainment.doNotStarveShipwrecked.obb"
+		wget -O "BMSH200601.OBB" "https://sj.71acg.com/hykb/shujubao/main.50.com.kleientertainment.doNotStarveShipwrecked.obb"
 		if test "$?" -eq "0"; then
-			bmsay "获取BMSH200601.OBB成功." 32m
+			bmsay "获取BMSH200601.OBB成功.\n" 32m
 			return 0
 		else
-			bmsay "获取BMSH200601.OBB失败." 31m
+			bmsay "获取BMSH200601.OBB失败.\n" 31m
 			pause
 			main
 		fi
@@ -403,17 +389,17 @@ function bmsh_sw_zip_exist() {
 	size=$(get_file_size "$bmsh_sw_zip")
 	if test "$size" -gt "6000000"; then
 		#BMSH200601.OPH已存在
-		bmsay "获取BMSH200601.OPH成功." 32m
+		bmsay "获取BMSH200601.OPH成功.\n" 32m
 		return 0
 	else
-		bmsay "获取BMSH200601.OPH..." 33m
+		bmsay "获取BMSH200601.OPH...\n" 33m
 		#https://t.cn/A6LjRekn
 		get_file_github 200601 BMSH200601.OPH
 		if test "$?" -eq "0"; then
-			bmsay "获取BMSH200601.OPH成功." 32m
+			bmsay "获取BMSH200601.OPH成功.\n" 32m
 			return 0
 		else
-			bmsay "获取BMSH200601.OPH失败." 31m
+			bmsay "获取BMSH200601.OPH失败.\n" 31m
 			pause
 			main
 		fi
@@ -424,24 +410,24 @@ function bmsh_sw_zip_exist() {
 #修改数据包：移除文件
 function rm_to_obb() {
 	if test -z "$*"; then
-		bmsay "我不知道你要移除哪些文件." 31m
+		bmsay "我不知道你要移除哪些文件.\n" 31m
 		pause
 		return 1
 	fi
 
 	if test ! -f "/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb"; then
-		bmsay "你好像还没有“安装”文件." 31m
+		bmsay "你好像还没有“安装”文件.\n" 31m
 		pause
 		return 1
 	fi
 
 	if test "$1" -eq "-1"; then
-		bmsay "移除“全部”已安装文件..." 33m
+		bmsay "移除“全部”已安装文件...\n" 33m
 		rm /sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb
 		if test "$?" -eq "0"; then
-			bmsay "移除“全部”已安装文成功." 32m
+			bmsay "移除“全部”已安装文成功.\n" 32m
 		else
-			bmsay "移除“全部”已安装文失败." 31m
+			bmsay "移除“全部”已安装文失败.\n" 31m
 		fi
 		return $?
 	fi
@@ -451,12 +437,12 @@ function rm_to_obb() {
 		id=$(echo "$id" | tr -cd "[0-9]")
 		if test -n "$id"; then
 			fname=$(printf "BM%04d" "$id")
-			bmsay "移除""$fname""..." 33m
+			bmsay "移除""$fname""...\n" 33m
 			7z d -tzip "/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb" "mods/$fname"
 			if test "$?" -eq "0"; then
-				bmsay "移除""$fname""成功." 32m
+				bmsay "移除""$fname""成功.\n" 32m
 			else
-				bmsay "移除""$fname""失败." 31m
+				bmsay "移除""$fname""失败.\n" 31m
 			fi
 		fi
 	done
@@ -472,7 +458,7 @@ function add_to_obb() {
 	mkdir -p add_to_obb >/dev/null 2>&1
 	cd add_to_obb
 	if test -z "$*"; then
-		bmsay "我不知道你要安装哪些文件." 31m
+		bmsay "我不知道你要安装哪些文件.\n" 31m
 		pause
 		return 1
 	fi
@@ -492,7 +478,7 @@ function add_to_obb() {
 	  id=$(echo "$id" | tr -cd "[0-9]")
 		if test -n "$id"; then
 			fname=$(printf "BM%04d" "$id")
-			bmsay "安装""$fname""..." 33m
+			bmsay "安装""$fname""...\n" 33m
 			get_file_github "$id" temp.zip
 			7z x -tzip "temp.zip" -otemp -aoa
 			dir=$(find "temp" -name "*ADD_TO_OBB")
@@ -500,9 +486,9 @@ function add_to_obb() {
 			rm -rf temp.zip temp >/dev/null 2>&1
 			7z a -tzip "/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb" "./*"
 			if test "$?" -eq "0"; then
-				bmsay "安装""$fname""成功." 32m
+				bmsay "安装""$fname""成功.\n" 32m
 			else
-				bmsay "安装""$fname""失败." 31m
+				bmsay "安装""$fname""失败.\n" 31m
 			fi
 		fi
 	done
@@ -522,7 +508,7 @@ function add_to_apk() {
 	if test -n "$*"; then
 		if test ! -f "/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb"; then
 			echo "$*"
-			bmsay "你好像还没有“安装”文件." 31m
+			bmsay "你好像还没有“安装”文件.\n" 31m
 			pause
 			main
 		fi
@@ -540,12 +526,12 @@ function add_to_apk() {
 
 	rm -rf assets patch
 
-	bmsay "解压BMSH200601.OBB..." 33m
+	bmsay "解压BMSH200601.OBB...\n" 33m
 	7z x -tzip "BMSH200601.OBB" -oassets -aoa
 	if test "$?" -eq "0"; then
-		bmsay "解压BMSH200601.OBB成功." 32m
+		bmsay "解压BMSH200601.OBB成功.\n" 32m
 	else
-		bmsay "解压BMSH200601.OBB失败." 31m
+		bmsay "解压BMSH200601.OBB失败.\n" 31m
 		pause
 		main
 	fi
@@ -560,57 +546,57 @@ function add_to_apk() {
 		fi
 	fi
 
-	bmsay "解压BMSH200601.OPH..." 33m
+	bmsay "解压BMSH200601.OPH...\n" 33m
 	7z x -tzip "BMSH200601.OPH" -opatch -aoa
 	if test "$?" -eq "0"; then
-		bmsay "解压BMSH200601.OPH成功." 32m
+		bmsay "解压BMSH200601.OPH成功.\n" 32m
 	else
-		bmsay "解压BMSH200601.OPH失败." 31m
+		bmsay "解压BMSH200601.OPH失败.\n" 31m
 		pause
 		main
 	fi
 
-	bmsay "生成BMSH200601.APP..." 33m
+	bmsay "生成BMSH200601.APP...\n" 33m
 	cp "BMSH200601.APP" "BMSH200601_SIGN.APK"
 	7z a -tzip "BMSH200601_SIGN.APK" "assets"
 	7z a -tzip "BMSH200601_SIGN.APK" "./patch/bmsh-patch-GIT200601/GIT200601/ADD_TO_APK/*"
 	if test "$?" -eq "0"; then
-		bmsay "生成BMSH200601.APP成功." 32m
+		bmsay "生成BMSH200601.APP成功.\n" 32m
 	else
-		bmsay "生成BMSH200601.APP失败." 31m
+		bmsay "生成BMSH200601.APP失败.\n" 31m
 		pause
 		main
 	fi
 
-	bmsay "生成APP签名验证文件..." 33m
+	bmsay "生成APP签名验证文件...\n" 33m
 	apksigner -p bmsh_sw "BMSH200601.JKS" "BMSH200601_SIGN.APK" "TEMP.APK"
 	if test "$?" -eq "0"; then
-		bmsay "生成APP签名验证文件成功." 32m
+		bmsay "生成APP签名验证文件成功.\n" 32m
 	else
-		bmsay "生成APP签名验证文件失败." 31m
+		bmsay "生成APP签名验证文件失败.\n" 31m
 		pause
 		main
 	fi
-	bmsay "签名BMSH200601.APP..." 33m
+	bmsay "签名BMSH200601.APP...\n" 33m
 	7z x -tzip "TEMP.APK" META-INF -aoa
 	7z a -tzip "BMSH200601_SIGN.APK" "META-INF"
 	if test "$?" -eq "0"; then
-		bmsay "签名BMSH200601.APP成功." 32m
+		bmsay "签名BMSH200601.APP成功.\n" 32m
 	else
-		bmsay "签名BMSH200601.APP失败." 31m
+		bmsay "签名BMSH200601.APP失败.\n" 31m
 		pause
 		main
 	fi
 
 	
-	bmsay "移动BMSH200601.APP..." 32m
+	bmsay "移动BMSH200601.APP...\n" 32m
 	rm -rf assets patch META-INF TEMP.APK /sdcard/船难_小黑*.APK
 	mv "BMSH200601_SIGN.APK" "$app_rename"
 	if test "$?" -eq "0"; then
-		bmsay "移动BMSH200601.APP成功." 32m
-		bmsay "请手动安装 /sdcard/船难(BM).APK ." 34m
+		bmsay "移动BMSH200601.APP成功.\n" 32m
+		bmsay "请手动安装 /sdcard/船难(BM).APK .\n" 34m
 	else
-		bmsay "移动BMSH200601.APP失败." 31m
+		bmsay "移动BMSH200601.APP失败.\n" 31m
 		pause
 		main
 	fi
