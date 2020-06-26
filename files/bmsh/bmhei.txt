@@ -28,6 +28,8 @@
 #    移除模组                 rm_to_obb ...
 #==================================================#
 
+
+BMVER=1.3
 #上次使用时间
 FILE_LASTTIME="/data/data/com.termux/files/home/.bmhei_lasttime"
 DATA_LASTTIME=$(cat "$FILE_LASTTIME") >/dev/null 2>&1
@@ -68,7 +70,7 @@ function main() {
 		read input 
 		echo		case $input in
 		[1])
-			bmsay "小黑  [1.2]  樂不思蜀\n" 33m 0
+			bmsay "小黑  [$BMVER]  樂不思蜀\n" 33m 0
 			bmsay "  1.输入正确选项，我会帮你进行相应操作。\n" 34m 0
 			bmsay "  2.什么都不输入，我会帮你进行“ * ”操作。\n" 34m 0
 			bmsay "  3.输入错误选项，我会帮你进行“ * ”操作。\n" 34m 0
