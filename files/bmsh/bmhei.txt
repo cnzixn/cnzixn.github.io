@@ -69,7 +69,7 @@ function main() {
 		bmsay
 		case $input in
 		[1])
-			bmsay "新人，你好呀，很高兴见到你！" 33m 0
+			bmsay "小黑  [1.0]  樂不思蜀" 33m 0
 
 			bmsay "  1.输入正确选项，我会帮你进行相应操作。" 34m 0
 			bmsay "  2.什么都不输入，我会帮你进行“ * ”操作。" 34m 0
@@ -275,6 +275,9 @@ difftime=$(expr $currenttime - $lasttime)
 		wget -O ".bmhei.txt" -N "https://cnzixn.github.io/files/bmsh/bmhei.txt"
 		if test "$?" -ne "0"; then
 			printf "获取最新文件bmhei.txt失败."
+			exit 99
+		else
+			cp -r ".bmhei.txt" $PREFIX/bin/hei
 		fi
 	fi
 
