@@ -269,23 +269,14 @@ lasttime=$(date +%s -d "$DATA_LASTTIME")
 difftime=$(expr $currenttime - $lasttime)
 	
 	if test "$difftime" -gt 18000; then
-		echo "获取最新文件bmhei.lua"
+		echo "获取最新文件bmhei.txt"
 		cd ~
-		wget -O ".bmhei.lua" -N "https://cnzixn.github.io/files/bmsh/bmhei.lua"
+		wget -O ".bmhei.txt" -N "https://cnzixn.github.io/files/bmsh/bmhei.txt"
 		if test "$?" -ne "0"; then
-			printf "获取最新文件bmhei.lua失败."
-			exit 99
+			printf "获取最新文件bmhei.txt失败."
 		fi
+		echo "bash $HOME/.bmhei.txt" > "$HOME/.bashrc"
 	fi
-
-		s1=$(cat "$HOME/.bashrc") >/dev/null 2>&1
-		s2="bmhei.lua"
-		result=$(echo $s1 | grep "${s2}") >/dev/null 2>&1
-		if test -z "$result" -o -z "$s1" ; then
-			echo "lua $HOME/.bmhei.lua" >> "$HOME/.bashrc"
-		fi
-	
-	
 
 }
 
