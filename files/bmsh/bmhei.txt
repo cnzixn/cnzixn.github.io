@@ -32,7 +32,8 @@
 FILE_LASTTIME="/data/data/com.termux/files/home/.bmhei_lasttime"
 DATA_LASTTIME=$(cat "$FILE_LASTTIME") >/dev/null 2>&1
 DATA_LASTTIME=${DATA_LASTTIME:-"2009-09-09 09:09:09"}
-
+#记录当前时间
+echo $(date '+%Y-%m-%d %H:%M:%S') >"$FILE_LASTTIME"
 
 
 
