@@ -64,7 +64,7 @@ function main() {
 		bmsay "  3.对不起，我不想继续了。" 33m 0
 		bmsay "  提示：输入选项并“回车”。" 33m 0
 		bmsay "你的输入：" 33m 0
-		read -n 1 input 
+		read input 
 		bmsay
 		case $input in
 		[1])
@@ -94,7 +94,7 @@ function main() {
 		bmsay " *2.不用，我想进行下一步。" 33m 0
 		bmsay "  3.对不起，我不想继续了。" 33m 0
 		bmsay "你的输入：" 33m 0
-		read -n 1 input 
+		read input 
 		bmsay
 		case $input in
 		[1])
@@ -119,7 +119,7 @@ function main() {
 		bmsay " *2.不用，我想进行下一步。" 33m 0
 		bmsay "  3.对不起，我不想继续了。" 33m 0
 		bmsay "你的输入：" 33m 0
-		read -n 1 input 
+		read input 
 		bmsay
 		case $input in
 		[1])
@@ -148,7 +148,7 @@ function main() {
 		bmsay " *2.不用，我想进行下一步。" 33m 0
 		bmsay "  3.对不起，我不想继续了。" 33m 0
 		bmsay "你的输入：" 33m 0
-		read -n 1 input 
+		read input 
 		bmsay
 		case $input in
 		[1])
@@ -176,7 +176,7 @@ function main() {
 		bmsay " *2.不用，我想进行下一步。" 33m 0
 		bmsay "  3.对不起，我不想继续了。" 33m 0
 		bmsay "你的输入：" 33m 0
-		read -n 1 input 
+		read input 
 		bmsay
 		case $input in
 		[1])
@@ -270,12 +270,11 @@ difftime=$(expr $currenttime - $lasttime)
 	
 	if test "$difftime" -gt 18000; then
 		echo "获取最新文件bmhei.txt"
-		cd ~
+		cd /data/data/com.termux/files/home
 		wget -O ".bmhei.txt" -N "https://cnzixn.github.io/files/bmsh/bmhei.txt"
 		if test "$?" -ne "0"; then
 			printf "获取最新文件bmhei.txt失败."
 		fi
-		echo "bash /data/data/com.termux/files/home/.bmhei.txt" > "/data/data/com.termux/files/home/.bashrc"
 	fi
 
 }
