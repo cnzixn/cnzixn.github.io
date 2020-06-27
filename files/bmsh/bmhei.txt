@@ -29,7 +29,7 @@
 #==================================================#
 
 
-BMVER=1.4
+BMVER=1.5
 #上次使用时间
 FILE_LASTTIME="/data/data/com.termux/files/home/.bmhei_lasttime"
 DATA_LASTTIME=$(cat "$FILE_LASTTIME") >/dev/null 2>&1
@@ -93,7 +93,6 @@ function main() {
 
 	while true; do
 	clear
-	echo ">"$input"<"
 		bmsay "2.你想要“获取”小黑专用版？\n" 33m 0
 		bmsay "  1.是的，我还没安装游戏。\n" 33m 0
 		bmsay " *2.不用，我想进行下一步。\n" 33m 0
