@@ -70,13 +70,14 @@ function main() {
 		read input 
 		echo
 		case $input in
-		[1] )
+		[1*])
 			bmsay "小黑  [""$BMVER""]  樂不思蜀\n" 33m 0
 			bmsay "  1.输入正确选项，我会帮你进行相应操作。\n" 34m 0
 			bmsay "  2.什么都不输入，我会帮你进行“ * ”操作。\n" 34m 0
 			bmsay "  3.输入错误选项，我会帮你进行“ * ”操作。\n" 34m 0
 			bmsay "你记住了吗？\n" 33m 0
 			pause
+			break
 			;;
 		[3] )
 			clear
