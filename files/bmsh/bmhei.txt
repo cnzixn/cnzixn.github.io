@@ -29,7 +29,7 @@
 #==================================================#
 
 
-BMVER=1.5
+BMVER=1.6
 #上次使用时间
 FILE_LASTTIME="/data/data/com.termux/files/home/.bmhei_lasttime"
 DATA_LASTTIME=$(cat "$FILE_LASTTIME") >/dev/null 2>&1
@@ -443,10 +443,11 @@ function rm_to_obb() {
 		bmsay "移除“全部”已安装文件...\n" 33m
 		rm /sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb
 		if test "$?" -eq "0"; then
-			bmsay "移除“全部”已安装文成功.\n" 32m
+			bmsay "移除“全部”已安装文件成功.\n" 32m
 		else
-			bmsay "移除“全部”已安装文失败.\n" 31m
+			bmsay "移除“全部”已安装文件失败.\n" 31m
 		fi
+		pause
 		return $?
 	fi
 
