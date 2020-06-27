@@ -70,7 +70,7 @@ function main() {
 		read input 
 		echo
 		case $input in
-		[1*])
+		[1])
 			bmsay "小黑  [""$BMVER""]  樂不思蜀\n" 33m 0
 			bmsay "  1.输入正确选项，我会帮你进行相应操作。\n" 34m 0
 			bmsay "  2.什么都不输入，我会帮你进行“ * ”操作。\n" 34m 0
@@ -93,6 +93,7 @@ function main() {
 
 	while true; do
 	clear
+	echo ">"$input"<"
 		bmsay "2.你想要“获取”小黑专用版？\n" 33m 0
 		bmsay "  1.是的，我还没安装游戏。\n" 33m 0
 		bmsay " *2.不用，我想进行下一步。\n" 33m 0
