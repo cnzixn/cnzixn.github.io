@@ -91,6 +91,7 @@ function main() {
 	echo
 
 	while true; do
+	clear
 		bmsay "2.你想要“获取”小黑专用版？\n" 33m 0
 		bmsay "  1.是的，我还没安装游戏。\n" 33m 0
 		bmsay " *2.不用，我想进行下一步。\n" 33m 0
@@ -116,6 +117,7 @@ function main() {
 	echo
 
 	while true; do
+	clear
 		bmsay "3.你想要“安装”一些文件么？\n" 33m 0
 		bmsay "  1.是的，快帮我安装一下。\n" 33m 0
 		bmsay " *2.不用，我想进行下一步。\n" 33m 0
@@ -145,6 +147,7 @@ function main() {
 	echo
 
 	while true; do
+	clear
 		bmsay "4.你想要“移除”一些文件么？\n" 33m 0
 		bmsay "  1.是的，快帮我移除它们。\n" 33m 0
 		bmsay " *2.不用，我想进行下一步。\n" 33m 0
@@ -173,6 +176,7 @@ function main() {
 	echo
 
 	while true; do
+	clear
 		bmsay "5.你想要“分享”给朋友么？\n" 33m 0
 		bmsay "  1.是的，我朋友也想要玩。\n" 33m 0
 		bmsay " *2.不用，我想进行下一步。\n" 33m 0
