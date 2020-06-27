@@ -526,7 +526,6 @@ function add_to_apk() {
 	#附带外部数据包：检测是否有“安装”文件
 	if test -n "$*"; then
 		if test ! -f "/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb"; then
-			echo "$*"
 			bmsay "你好像还没有“安装”文件.\n" 31m
 			pause
 			main
