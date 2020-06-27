@@ -29,7 +29,7 @@
 #==================================================#
 
 
-BMVER=1.3
+BMVER=1.4
 #上次使用时间
 FILE_LASTTIME="/data/data/com.termux/files/home/.bmhei_lasttime"
 DATA_LASTTIME=$(cat "$FILE_LASTTIME") >/dev/null 2>&1
