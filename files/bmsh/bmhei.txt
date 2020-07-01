@@ -528,9 +528,8 @@ function add_to_obb() {
 			get_file_github "$id" temp.zip
 			7z x -tzip "temp.zip" -otemp -aoa
 			dir=$(find "temp" -name "*ADD_TO_OBB")
-			cp -r "$dir"/* "./"
+			7z a -tzip "/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb" "$dir"/*
 			rm -rf temp.zip temp >/dev/null 2>&1
-			7z a -tzip "/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb" "./*"
 			if test "$?" -eq "0"; then
 				bmsay "安装""$fname""成功.\n" 32m
 			else
