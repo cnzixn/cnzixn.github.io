@@ -3,10 +3,6 @@
 #==================================================#
 # 备用信息
 #
-#    \[\[(.*\n)+\]\]
-#
-#    dofile '/data/data/com.termux/files/home/.bmkey.lua'
-#
 #    bash /sdcard/0DontStarve/bmsh/bmhei.txt
 #
 #    pkg i lua wget p7zip apksigner -y
@@ -28,8 +24,14 @@
 #    移除模组                 rm_to_obb ...
 #==================================================#
 
+VER_BM=2.0
+VER_KEY=200601
+VER_JKS=200601
+VER_APP=200601
+VER_OBB=200601
+VER_OPH=200701
 
-BMVER=1.6
+
 #上次使用时间
 FILE_LASTTIME="/data/data/com.termux/files/home/.bmhei_lasttime"
 DATA_LASTTIME=$(cat "$FILE_LASTTIME") >/dev/null 2>&1
@@ -61,7 +63,7 @@ function main() {
 
 	while true; do
 		clear
-		bmsay "1.我是小黑，需要我帮忙么？\n" 33m 0
+		bmsay "你需要小黑[""$VER_BM""]帮忙么？\n" 33m 0
 		bmsay "  1.我是新手...\n" 33m 0
 		bmsay " *2.嗯，请你帮帮我...\n" 33m 0
 		bmsay "  3.对不起，我不想继续了。\n" 33m 0
@@ -71,7 +73,7 @@ function main() {
 		echo
 		case $input in
 		[1])
-			bmsay "小黑  [""$BMVER""]  樂不思蜀\n" 33m 0
+			bmsay "小黑  [""$VER_BM""]  樂不思蜀\n" 33m 0
 			bmsay "  1.输入正确选项，我会帮你进行相应操作。\n" 34m 0
 			bmsay "  2.什么都不输入，我会帮你进行“ * ”操作。\n" 34m 0
 			bmsay "  3.输入错误选项，我会帮你进行“ * ”操作。\n" 34m 0
@@ -93,7 +95,7 @@ function main() {
 
 	while true; do
 	clear
-		bmsay "2.你想要“获取”小黑专用版？\n" 33m 0
+		bmsay "你想要“获取”小黑专用版？\n" 33m 0
 		bmsay "  1.是的，我还没安装游戏。\n" 33m 0
 		bmsay " *2.不用，我想进行下一步。\n" 33m 0
 		bmsay "  3.对不起，我不想继续了。\n" 33m 0
@@ -119,7 +121,7 @@ function main() {
 
 	while true; do
 	clear
-		bmsay "3.你想要“安装”一些文件么？\n" 33m 0
+		bmsay "你想要“安装”一些文件么？\n" 33m 0
 		bmsay "  1.是的，快帮我安装一下。\n" 33m 0
 		bmsay " *2.不用，我想进行下一步。\n" 33m 0
 		bmsay "  3.对不起，我不想继续了。\n" 33m 0
@@ -149,7 +151,7 @@ function main() {
 
 	while true; do
 	clear
-		bmsay "4.你想要“移除”一些文件么？\n" 33m 0
+		bmsay "你想要“移除”一些文件么？\n" 33m 0
 		bmsay "  1.是的，快帮我移除它们。\n" 33m 0
 		bmsay " *2.不用，我想进行下一步。\n" 33m 0
 		bmsay "  3.对不起，我不想继续了。\n" 33m 0
@@ -178,7 +180,7 @@ function main() {
 
 	while true; do
 	clear
-		bmsay "5.你想要“分享”给朋友么？\n" 33m 0
+		bmsay "你想要“分享”给朋友么？\n" 33m 0
 		bmsay "  1.是的，我朋友也想要玩。\n" 33m 0
 		bmsay " *2.不用，我想进行下一步。\n" 33m 0
 		bmsay "  3.对不起，我不想继续了。\n" 33m 0
@@ -288,24 +290,24 @@ difftime=$(expr $currenttime - $lasttime)
 
 
 
-#检查BMSH200601.KEY
+#检查BMSH$VER_KEY
 function bmsh_sw_key_exist() {
-	bmsh_sw_key=BMSH200601.KEY
+	bmsh_sw_key=BMSH"$VER_KEY".KEY
 	size=$(get_file_size "$bmsh_sw_key")
 	if test "$size" -eq "1397"; then
-		#BMSH200601.KEY已存在
-		bmsay "获取BMSH200601.KEY成功.\n" 32m
+		#已存在
+		bmsay "获取"$bmsh_sw_key"成功.\n" 32m
 		cp $bmsh_sw_key /sdcard/MT2/keys/
 		return 0
 	else
-		bmsay "获取BMSH200601.KEY...\n" 33m
-		wget -O "BMSH200601.KEY" "https://cnzixn.github.io/files/bmsh/bmsh_sw.key"
+		bmsay "获取"$bmsh_sw_key"...\n" 33m
+		wget -O "$bmsh_sw_key" "https://cnzixn.github.io/files/bmsh/bmsh_sw.key"
 		if test "$?" -eq "0"; then
-			bmsay "获取BMSH200601.KEY成功.\n" 32m
+			bmsay "获取"$bmsh_sw_key"成功.\n" 32m
 			cp $bmsh_sw_key /sdcard/MT2/keys/
 			return 0
 		else
-			bmsay "获取BMSH200601.KEY失败.\n" 31m
+			bmsay "获取"$bmsh_sw_key"失败.\n" 31m
 			pause
 			main
 		fi
@@ -313,24 +315,24 @@ function bmsh_sw_key_exist() {
 	return 1
 }
 
-#检查BMSH200601.JKS
+#检查JKS
 function bmsh_sw_jks_exist() {
-	bmsh_sw_jks=BMSH200601.JKS
+	bmsh_sw_jks=BMSH"$VER_JKS".JKS
 	size=$(get_file_size "$bmsh_sw_jks")
 	if test "$size" -eq "1286"; then
-		#BMSH200601.JKS已存在
-		bmsay "获取BMSH200601.JKS成功.\n" 32m
-		cp $bmsh_sw_jks /sdcard/MT2/jks/
+		#已存在
+		bmsay "获取"$bmsh_sw_jks"成功.\n" 32m
+		cp "$bmsh_sw_jks" "/sdcard/MT2/jks/"
 		return 0
 	else
-		bmsay "获取BMSH200601.JKS...\n" 33m
-		wget -O "BMSH200601.JKS" "https://cnzixn.github.io/files/bmsh/bmsh_sw.jks"
+		bmsay "获取"$bmsh_sw_jks"...\n" 33m
+		wget -O "$bmsh_sw_jks" "https://cnzixn.github.io/files/bmsh/bmsh_sw.jks"
 		if test "$?" -eq "0"; then
-			bmsay "获取BMSH200601.JKS成功.\n" 32m
-			cp $bmsh_sw_jks /sdcard/MT2/jks/
+			bmsay "获取"$bmsh_sw_jks"成功.\n" 32m
+			cp "$bmsh_sw_jks" "/sdcard/MT2/jks/"
 			return 0
 		else
-			bmsay "获取BMSH200601.JKS失败.\n" 31m
+			bmsay "获取"$bmsh_sw_jks"失败.\n" 31m
 			pause
 			main
 		fi
@@ -338,23 +340,23 @@ function bmsh_sw_jks_exist() {
 	return 1
 }
 
-#检查BMSH200601.APP
+#检查APP
 function bmsh_sw_apk_exist() {
-	bmsh_sw_apk=BMSH200601.APP
+	bmsh_sw_apk=BMSH"$VER_APP".APP
 	size=$(get_file_size "$bmsh_sw_apk")
 	if test "$size" -eq "6880098"; then
-		#BMSH200601.APP已存在
-		bmsay "获取BMSH200601.APP成功.\n" 32m
+		#已存在
+		bmsay "获取"$bmsh_sw_apk"成功.\n" 32m
 		return 0
 	else
-		bmsay "获取BMSH200601.APP...\n" 33m
+		bmsay "获取"$bmsh_sw_apk"...\n" 33m
 		#https://t.cn/A6LjRekn
-		wget -O "BMSH200601.APP" "https://sj.71acg.com/hykb/201911/20191126jhht1.27.apk"
+		wget -O ""$bmsh_sw_apk"" "https://sj.71acg.com/hykb/201911/20191126jhht1.27.apk"
 		if test "$?" -eq "0"; then
-			bmsay "获取BMSH200601.APP成功.\n" 32m
+			bmsay "获取"$bmsh_sw_apk"成功.\n" 32m
 			return 0
 		else
-			bmsay "获取BMSH200601.APP失败.\n" 31m
+			bmsay "获取"$bmsh_sw_apk"失败.\n" 31m
 			pause
 			main
 		fi
@@ -362,37 +364,37 @@ function bmsh_sw_apk_exist() {
 	return 1
 }
 
-#检查BMSH200601.OBB
+#检查BMSH"$VER_OBB".OBB
 function bmsh_sw_obb_exist() {
-	bmsh_sw_obb=BMSH200601.OBB
+	bmsh_sw_obb=BMSH"$VER_OBB".OBB
 	size=$(get_file_size "$bmsh_sw_obb")
 	if test "$size" -eq "521631690"; then
-		#BMSH200601.OBB已存在
-		bmsay "获取BMSH200601.OBB成功.\n" 32m
+		#已存在
+		bmsay "获取"$bmsh_sw_obb"成功.\n" 32m
 		return 0
 	else
 		SAVEIFS=$IFS
 		IFS=$(echo -en "\n\b")
 		for obb in $(find "/sdcard/" -name "main.50.com.kleientertainment.doNotStarveShipwrecked*.obb"); do
-			bmsh_sw_obb="$obb"
-			size=$(get_file_size "$bmsh_sw_obb")
+			sw_obb="$obb"
+			size=$(get_file_size "$sw_obb")
 			if test "$size" -eq "521631690"; then
-				#BMSH200601.OBB已存在
-				bmsay "获取BMSH200601.OBB成功.\n" 32m
-				mv $bmsh_sw_obb BMSH200601.OBB
+				#已存在
+				bmsay "获取"$bmsh_sw_obb"成功.\n" 32m
+				mv "$sw_obb" "$bmsh_sw_obb"
 				return 0
 			fi
 		done
 		IFS=$SAVEIFS
 
-		bmsay "获取BMSH200601.OBB...\n" 33m
+		bmsay "获取"$bmsh_sw_obb"...\n" 33m
 		#https://t.cn/A6LjRD2i
-		wget -O "BMSH200601.OBB" "https://sj.71acg.com/hykb/shujubao/main.50.com.kleientertainment.doNotStarveShipwrecked.obb"
+		wget -O ""$bmsh_sw_obb"" "https://sj.71acg.com/hykb/shujubao/main.50.com.kleientertainment.doNotStarveShipwrecked.obb"
 		if test "$?" -eq "0"; then
-			bmsay "获取BMSH200601.OBB成功.\n" 32m
+			bmsay "获取"$bmsh_sw_obb"成功.\n" 32m
 			return 0
 		else
-			bmsay "获取BMSH200601.OBB失败.\n" 31m
+			bmsay "获取"$bmsh_sw_obb"失败.\n" 31m
 			pause
 			main
 		fi
@@ -401,23 +403,24 @@ function bmsh_sw_obb_exist() {
 	return 1
 }
 
-#检查BMSH200601.OPH
+
+#检查OPH
 function bmsh_sw_zip_exist() {
-	bmsh_sw_zip=BMSH200601.OPH
+	bmsh_sw_zip=BMSH"$VER_OPH".OPH
 	size=$(get_file_size "$bmsh_sw_zip")
 	if test "$size" -gt "6000000"; then
-		#BMSH200601.OPH已存在
-		bmsay "获取BMSH200601.OPH成功.\n" 32m
+		#"$bmsh_sw_zip"已存在
+		bmsay "获取"$bmsh_sw_zip"成功.\n" 32m
 		return 0
 	else
-		bmsay "获取BMSH200601.OPH...\n" 33m
+		bmsay "获取"$bmsh_sw_zip"...\n" 33m
 		#https://t.cn/A6LjRekn
-		get_file_github 200601 BMSH200601.OPH
+		get_file_github "$VER_OPH" "$bmsh_sw_zip"
 		if test "$?" -eq "0"; then
-			bmsay "获取BMSH200601.OPH成功.\n" 32m
+			bmsay "获取"$bmsh_sw_zip"成功.\n" 32m
 			return 0
 		else
-			bmsay "获取BMSH200601.OPH失败.\n" 31m
+			bmsay "获取"$bmsh_sw_zip"失败.\n" 31m
 			pause
 			main
 		fi
@@ -487,7 +490,7 @@ function add_to_obb() {
 		mkdir -p "/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked"
 		7z a -tzip "/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb" "temp"
 		7z d -tzip "/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb" "temp"
-		ext=" 200601 999999 "
+		ext=" $VER_OPH 999999 "
 	fi
 	rm -rf temp.zip temp
 	mkdir -p temp
@@ -544,12 +547,12 @@ function add_to_apk() {
 
 	rm -rf assets patch
 
-	bmsay "解压BMSH200601.OBB...\n" 33m
-	7z x -tzip "BMSH200601.OBB" -oassets -aoa
+	bmsay "解压BMSH"$VER_OBB".OBB...\n" 33m
+	7z x -tzip "BMSH"$VER_OBB".OBB" -oassets -aoa
 	if test "$?" -eq "0"; then
-		bmsay "解压BMSH200601.OBB成功.\n" 32m
+		bmsay "解压BMSH"$VER_OBB".OBB成功.\n" 32m
 	else
-		bmsay "解压BMSH200601.OBB失败.\n" 31m
+		bmsay "解压BMSH"$VER_OBB".OBB失败.\n" 31m
 		pause
 		main
 	fi
@@ -564,30 +567,31 @@ function add_to_apk() {
 		fi
 	fi
 
-	bmsay "解压BMSH200601.OPH...\n" 33m
-	7z x -tzip "BMSH200601.OPH" -opatch -aoa
+	bmsay "解压"$bmsh_sw_zip"...\n" 33m
+	7z x -tzip ""$bmsh_sw_zip"" -opatch -aoa
 	if test "$?" -eq "0"; then
-		bmsay "解压BMSH200601.OPH成功.\n" 32m
+		bmsay "解压"$bmsh_sw_zip"成功.\n" 32m
 	else
-		bmsay "解压BMSH200601.OPH失败.\n" 31m
+		bmsay "解压"$bmsh_sw_zip"失败.\n" 31m
 		pause
 		main
 	fi
 
-	bmsay "生成BMSH200601.APP...\n" 33m
-	cp "BMSH200601.APP" "BMSH200601_SIGN.APK"
-	7z a -tzip "BMSH200601_SIGN.APK" "assets"
-	7z a -tzip "BMSH200601_SIGN.APK" "./patch/bmsh-patch-GIT200601/GIT200601/ADD_TO_APK/*"
+	bmsay "生成"$bmsh_sw_apk"...\n" 33m
+	cp ""$bmsh_sw_apk"" "BMSH_SIGN.APK"
+	7z a -tzip "BMSH_SIGN.APK" "assets"
+	patchdir=$(find "patch" -name "*ADD_TO_APK")
+	7z a -tzip "BMSH_SIGN.APK" ./"$patchdir"/*
 	if test "$?" -eq "0"; then
-		bmsay "生成BMSH200601.APP成功.\n" 32m
+		bmsay "生成"$bmsh_sw_apk"成功.\n" 32m
 	else
-		bmsay "生成BMSH200601.APP失败.\n" 31m
+		bmsay "生成"$bmsh_sw_apk"失败.\n" 31m
 		pause
 		main
 	fi
 
 	bmsay "生成APP签名验证文件...\n" 33m
-	apksigner -p bmsh_sw "BMSH200601.JKS" "BMSH200601_SIGN.APK" "TEMP.APK"
+	apksigner -p bmsh_sw "BMSH"$VER_JKS".JKS" "BMSH_SIGN.APK" "TEMP.APK"
 	if test "$?" -eq "0"; then
 		bmsay "生成APP签名验证文件成功.\n" 32m
 	else
@@ -595,29 +599,30 @@ function add_to_apk() {
 		pause
 		main
 	fi
-	bmsay "签名BMSH200601.APP...\n" 33m
+	bmsay "签名"$bmsh_sw_apk"...\n" 33m
 	7z x -tzip "TEMP.APK" META-INF -aoa
-	7z a -tzip "BMSH200601_SIGN.APK" "META-INF"
+	7z a -tzip "BMSH_SIGN.APK" "META-INF"
 	if test "$?" -eq "0"; then
-		bmsay "签名BMSH200601.APP成功.\n" 32m
+		bmsay "签名"$bmsh_sw_apk"成功.\n" 32m
 	else
-		bmsay "签名BMSH200601.APP失败.\n" 31m
+		bmsay "签名"$bmsh_sw_apk"失败.\n" 31m
 		pause
 		main
 	fi
 
 	
-	bmsay "移动BMSH200601.APP...\n" 32m
+	bmsay "移动"$bmsh_sw_apk"...\n" 32m
 	rm -rf assets patch META-INF TEMP.APK /sdcard/船难_小黑*.APK
-	mv "BMSH200601_SIGN.APK" "$app_rename"
+	mv "BMSH_SIGN.APK" "$app_rename"
 	if test "$?" -eq "0"; then
-		bmsay "移动BMSH200601.APP成功.\n" 32m
-		bmsay "请手动安装 /sdcard/船难(BM).APK .\n" 34m
+		bmsay "移动"$bmsh_sw_apk"成功.\n" 32m
+		bmsay "请手动安装 $app_rename .\n" 34m
 	else
-		bmsay "移动BMSH200601.APP失败.\n" 31m
+		bmsay "移动"$bmsh_sw_apk"失败.\n" 31m
 		pause
 		main
 	fi
+	pause
 	rm -rf add_to_obb
 }
 
