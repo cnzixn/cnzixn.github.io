@@ -24,7 +24,7 @@
 #    移除模组                 rm_to_obb ...
 #==================================================#
 
-VER_BM=2.2
+VER_BM=2.3
 VER_KEY=200601
 VER_JKS=200601
 VER_APP=200601
@@ -470,6 +470,7 @@ function rm_to_obb() {
 	for id in $ids ; do
 		id=$(echo "$id" | tr -cd "[0-9]")
 		if test -n "$id"; then
+			id=$(expr $id + 0)
 			fname=$(printf "BM%04d" "$id")
 			bmsay "移除""$fname""...\n" 33m
 			7z d -tzip "/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb" "mods/$fname"
@@ -512,6 +513,7 @@ function add_to_obb() {
 	for id in $ids ; do
 	  id=$(echo "$id" | tr -cd "[0-9]")
 		if test -n "$id"; then
+			id=$(expr $id + 0)
 			fname=$(printf "BM%04d" "$id")
 			#删除旧文件
 		old=$(7z l "/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb" "mods/$fname/" | grep -Eo "BM[0-9]+" | tr ' ' '\n' | uniq | sort -n)
