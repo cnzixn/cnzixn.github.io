@@ -453,7 +453,9 @@ function rm_to_obb() {
 		return 1
 	fi
 
-	if test "$1" -eq "-1"; then
+	id=$(echo "$1" | tr -cd "[0-9]")
+	id=$(expr $id + 0)
+	if test "$id" -eq "-1"; then
 		bmsay "移除“全部”已安装文件...\n" 33m
 		rm /sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb
 		if test "$?" -eq "0"; then
