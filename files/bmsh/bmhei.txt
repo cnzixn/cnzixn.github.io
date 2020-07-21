@@ -24,7 +24,7 @@
 #    移除模组                 rm_to_obb ...
 #==================================================#
 
-VER_BM=2.3
+VER_BM=2.4
 VER_KEY=200601
 VER_JKS=200601
 VER_APP=200601
@@ -276,7 +276,7 @@ currenttime="$(date +%s -d "$(date '+%Y-%m-%d %H:%M:%S')")"
 lasttime=$(date +%s -d "$DATA_LASTTIME")
 difftime=$(expr $currenttime - $lasttime)
 	
-	if test "$difftime" -gt 18000; then
+	if test "$difftime" -gt 30 ; then
 		echo "获取最新文件bmhei.txt"
 		cd /data/data/com.termux/files/home
 		wget -O ".bmhei.txt" "https://cnzixn.github.io/files/bmsh/bmhei.txt"
@@ -284,7 +284,9 @@ difftime=$(expr $currenttime - $lasttime)
 			printf "获取最新文件bmhei.txt失败."
 			exit 99
 		else
-			cp -rf ".bmhei.txt" $PREFIX/bin/hei
+			cp -rf ".bmhei.txt" "$PREFIX/bin/hei"
+			chmod +x "$PREFIX/bin/hei"
+			hei
 		fi
 	fi
 
@@ -453,9 +455,7 @@ function rm_to_obb() {
 		return 1
 	fi
 
-	id=$(echo "$1" | tr -cd "[0-9]")
-	id=$(expr $id + 0)
-	if test "$id" -eq "-1"; then
+	if test "$1" -eq "-1"; then
 		bmsay "移除“全部”已安装文件...\n" 33m
 		rm /sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb
 		if test "$?" -eq "0"; then
