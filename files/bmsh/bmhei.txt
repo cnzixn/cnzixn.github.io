@@ -506,6 +506,9 @@ function add_to_obb() {
 		mkdir -p "/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked"
 		7z a -tzip "/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb" "temp"
 		7z d -tzip "/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb" "temp"
+	fi
+	new=$(7z l "/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb" "mods/BM0000/" | grep -Eo "BM[0-9]+" | tr ' ' '\n' | uniq | sort -n)
+	if [ ! $new ]; then
 		ext=" $VER_OPH 999999 "
 	fi
 	rm -rf temp.zip temp
