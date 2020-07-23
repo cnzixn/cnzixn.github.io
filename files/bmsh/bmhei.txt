@@ -534,10 +534,11 @@ function add_to_obb() {
 			dir=$(find "temp" -name "*ADD_TO_OBB")
 			7z a -tzip "/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb" ./"$dir"/*
 			rm -rf temp.zip temp >/dev/null 2>&1
-			if test "$?" -eq "0"; then
-				bmsay "安装""$fname""成功.\n" 32m
+			new=$(7z l "/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb" "mods/$fname/" | grep -Eo "BM[0-9]+" | tr ' ' '\n' | uniq | sort -n)
+			if [ $new ]; then
+				bmsay "安装$fname成功.\n" 32m
 			else
-				bmsay "安装""$fname""失败.\n" 31m
+				bmsay "安装$fname失败.\n" 31m
 			fi
 		fi
 	done
