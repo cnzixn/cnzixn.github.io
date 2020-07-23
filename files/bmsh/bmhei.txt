@@ -24,7 +24,7 @@
 #    移除模组                 rm_to_obb ...
 #==================================================#
 
-VER_BM=2.4
+VER_BM=2.5
 VER_KEY=200601
 VER_JKS=200601
 VER_APP=200601
@@ -433,10 +433,10 @@ function bmsh_sw_zip_exist() {
 }
 
 function get_mod_list() {
+	str=null
 	if [ -f "/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb" ]; then
 		str=$(7z l "/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb" "mods/BM????/" | grep -Eo "BM[0-9]+" | tr ' ' '\n' | uniq | sort -n )
 	fi
-	str=${str:-"null"}
 	bmsay "已安装模组列表：\n"
 	echo $str | xargs -n5
 }
