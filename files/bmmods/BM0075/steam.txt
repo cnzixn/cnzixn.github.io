@@ -1,0 +1,704 @@
+原文链接：https://steamcommunity.com/workshop/filedetails/discussion/244600638/540737958290122965/
+
+Sunnyyyyholic  [开发者] 2014年4月2日下午5:31
+[More information mods description]
+this is old manual but i really recommend read.
+--------------------------------
+Simple Description
+--------------------------------
+(you can change hotkey in mod configuration)
+
+[Information]
+Current Level = L
+Current Skill = K
+[Active skill]
+Valkyrie moods = V
+ㄴ(active skill, activate or deactivate)
+Special Attack = R
+ㄴ(active skill, [Lightning] is only activate in [Valkyrie] moods, and [weaon skills])
+Shield = C
+ㄴ(active skill, Unlock 2level, related skill : [Regenerate], [Flame shield])
+Shadow = G
+ㄴ(active skill, [Hide] is only activate in [Valkyrie] moods, [shadow image] is unlock to level 30)
+Perfomance = X
+ㄴ(active skill, [ music ] : music can be activated by pressing the x key when [music]100%.
+MUSHA
+Quicker and hungrier in the day. Slower with lower hunger decrease at night.
+Eats monster lasagna with no penalty but hates spoiled food.
+Fighting and eating levels up, faster with better food and tougher enemies.
+Many special abilities and increased stats as level increases.
+Four character states, Valkyrie unlocked at level 3, Berserk unlocked at level 7.
+YAMCHE
+Musha's unique Phoenix companion.Hatch his egg and grow him through 8 stages.
+Many special abilities and fuctions. [Battle Command] : hotkey (Y)
+[ITEM]
+Several unique items, craft Musha's crowns, armors and weapons.
+
+----------------------------
+Detail description
+----------------------------
+
+Musha features
+
+[General]
+DAY: Increased speed and hunger rate, depending on mood.
+Night: Decrease speed and hunger rate, depending on mood.
+Physically weaker, she does 75% damage.
+She has only health penalty to eating cooked monster meat and dried monster meat.
+She like monster lasagna
+She hate spoiled smells, reduced hunger and health for stale or spoiled food.
+She is smart. she can make a books.
+Valkyrie mood : fire immunity (just fire, not temperatures).
+Berserk mood : immunity cold & hot temperatures damage (just temperatures).
+Changes between 4 moods
+[Full]
+:Hunger more than 160, higher sanity gain, 100~80% movement speed, 80% attack speed.
+[Normal]
+:Hunger less then 160 :: normal status, 110~90% movement speed.
+[Valkyrie] unlock level 7 (hotkey V)
+:fast movement speed, fast attack speed. absorb damage, special skills (lightning strike, critical hit, hide.. )
+: Constantly damage health by current health. (health less then 30%, stop to damage)
+[Berserk] unlock level 7
+:Hunger less then 40 or eat [monster meat] - Except lasagna (turn to berserk 25%chance from eat monster meat, if sanity dropped below 30% then return to normal mood)
+: very fast movement speed, very fast attack speed, AOE attacks. special skills
+: Constantly high sanity loss
+
+Chance for EXP
+Prey: 30%
+Not prey: 80%
+Eye plant : 10%
+Tentacle arm : 10%
+Insect : 5%
+All Food: 5%
+Food with higher hunger, healing values: 30%, 50%, 70%
+
+Level up system
+Max level is 30.
+Level 30 is needs 7000 experience points.
+Kill or eat food to get EXP points.
+Get special powers each level.
+
+Health/Sanity
+[difficulty]
+- very easy
+start stat : health 120. sanity : 90
+each level up : health +10, sanity +15
+- easy
+start stat : health 120. sanity : 90
+each level up : health +5, sanity +10
+- normal
+start stat : health 80. sanity : 90
+each level up : health +5, sanity +10
+- hard
+start stat : health 70. sanity : 90
+each level up : health +5, sanity +5
+- hardcore
+start stat : health 60. sanity : 80
+each level up : health +5, sanity +5
+- hell
+start stat : health 40. sanity : 80
+each level up:
+level1~ level 19 : health +5, sanity +5
+level20 ~ level 30 : health +2, sanity +2
+
+HUNGER
+Base max hunger: 200
+
+
+[Sleep]
+- Now [sleep] is must needs of survival.
+Musha has [Sleep] stats.
+0 means lack of sleep, 100 means enough sleep.
+Constantly decreases sleep stats in wake state.
+If you lack of sleep, there will be a lot of debuffs.
+you can sleep on the floor immediately by pressing the X key.
+However, much better efficiency with using bedroll or tent and sleep near campfire.
+if sleep stat less 75, you sleep to 100 then [performance] Skill is charged.
+[Tired]
+- [sleep] stat is quickly consumed by [Tired].
+Musha has [Tired] stats.
+0 means good condition, 100 is very tired.
+All the action will feel more Tired. such as running or working or fight or active skills.
+If you do not any move then the [Tired] slowly restored.
+better sleep(bedroll or tent or near the fire) can quickly restored [Tired]
+for example, [Tired] 10 => adds -1 reduced [Sleep].
+
+-------------------------------------------------------------------
+For DLC2 Shipwrecked
+[Musha] Anti- poison skill
+1. Performance (Music) skill
+: If musha playing music then, the poison will be cure.
+2. Shield
+: Musha immune to poison while activating the shield on (C key)..
+-------------------------------------------------------------------
+
+Special Skill list
+
+-All passive skill is activate to chance (%).
+(For example, lightning shield1 has a 25% chance.)
+
+performances (music) skills [/ b]
+The ghost hound summon skill changes.
+Musha have the [music] Stat.
+During sleep => [music] will be charged.
+music can be activated by pressing the x key when [music]100%.
+it will be randomly selected three effects by [music].
+1. Wide range of light and recovery many sanity and fatigue.
+2. mid-range light and medium sanity recovery and summon the ghost dog.
+3. Small light range and summon two ghost dogs.
+Now, when you right-click a ghost dog sleeps.
+if ghost dog sleep then summon duration is stops.
+
+Shield[3/3]
+(active skill, T key)
+:cooltime 200sec, Damage absorption 100% 5sec. (level 2 is 7sec, level 3 is 9sec)
+
+Lightning shield [4/4]
+[/b](passive skill)
+:Defense, small HP recovery at a tyny sanity cost.
+
+Lightning Strike [2/2]
+[/b](Only activated for valkyrie, active skill, G key)
+how to active? only activate in Valkyrie moods, and press G key.
+:press G key, she has the glow effect. Then next attack with lightning bolt comes down.
+1level: cost -7sanity, damage -40
+2level: cost -9sanity, damage -80
+
+Lightning-Frost Strike [skill+item]
+(equip- special weapon + activated for valkyrie, active skill, G key)
+Lightnign strike + Frost hammer or Frost blade
+
+Lightning-Flame Strike [skill+item]
+(equip- special weapon + activated for valkyrie, active skill, G key)
+Lightnign strike + phoenix blade or phoenix axe
+
+[Call Lightning]
+how to use?
+1. when valkyrie state, you can marking [call] to enemies.
+Marking [call] - hit enemy : 5% / hit by enemy : 50%
+2. if enemies have [call] mark then, actiavte [Call Lightning] strike to enemies after few second from the sky.
+
+Frost hit [item skill]
+(equip- special weapon , active skill, G key)
+
+Flame hit [item skill]
+(equip- special weapon , active skill, G key)
+
+Critical hit [4/4]
+[/b](activated only valkyrie, passive skill)
+:Small chance of extra damage on attack.
+increases damage and chance by level
+critical activate only when the Valkyrie state.
+
+Valkyrie mood [1]
+[/b](active skill " V "key, Unlocks level 3 )
+fire immunity
+fast attack and move speed, adds special skill
+valkyrie hunger speed : wilson 5x
+[Absrob damage and Health consumed]
+- depending on current health percent
+[30% < current health]
+absorb damage 50%, Health consumed 0
+[30% < current health > 40%]
+absorb damage 45%, Health consumed 5sec => -1
+[40% < current health > 50%]
+absorb damage 40%, Health consumed 4sec => -1
+[50% < current health > 60%]
+absorb damage 35%, Health consumed 3sec => -1
+[60%< current health > 70%]
+absorb damage 30%, Health consumed 2sec => -1
+[70%< current health > 80%]
+absorb damage 25%, Health consumed 1.5sec => -1
+[80%< current health > 100%]
+absorb damage 20%, Health consumed 1sec => -1
+Berserk mood [1]
+[/b](passive skill)
+Unlocks level 7, activate hunger < 40 or eat a monster meat(25%chance)
+- [berserk] has special skills (freeze attack and reflect.)
+- In any normal attack is have AOS(attack of space). however, the AOS damage reduced 50% than direct hit damage.
+- AOS is damage to allies. If you command leave combat to yamche (battle command, default 'Y' key), yamche keep distance from musha.
+- Even if allies are attack to musha, she does not receive any damage from allies (yamche, ghost hound, shadow image).
+
+Backstab [3/3]
+[/b]( Active skill. unlock to level 10, 20, 30)
+- only activate in valkyrie mood
+- Hide : 'H' key (activate or deactivate)
+How to using?
+<backstab is very Powerful attack but, use with caution !>
+- 1. Hide : if activate stealth in the non-combat then enemy can not see you.
+- 2. backstab : If the enemy does not move in a non-combat, you can be successful [Backstab] attack.
+- 3. Succesful backstab : returns all sanity from hide cost
+Warning
+- 1. if enemy moving or fighting state then, the backstab will fail.
+- 2. if failed backstab, the cost(sanity) is not returned.
+Damage
+-level 1 damage : 400
+-level 2 damage : 750
+-level 3 damage : 1000
+Freeze attack [4/4]
+[/b](activated olny berserk, passive skill)
+:adds freeze attack.
+
+Regenerate [4/4]
+[/b]
+Regenerate skill is activated only during use shield skill
+Regenerate health in shield duration.
+1level regenerate : each 0.5 sec => 1 health heal
+2level regenerate : each 0.25 sec => 1 health heal
+3level regenerate : each 0.25 sec => 2 health heal
+4level regenerate : each 0.25 sec => 3 health heal
+
+Flame shield [4/4]
+[/b](Regenerate skill is activated only during use shield skill)
+:Reflect damage and burn
+- increase damage by level
+
+Freeze shield [p]
+[/b](only activated for berserk, passive skill)
+:Chance of freezing attacker when hit.
+
+Lesser cure [2/2]
+[/b](passive skill)
+:if low health, large amounts of health recovery. long cooltime
+
+berserk armor [1]
+[/b](only activated for berserk, passive skill)
+:absorb damage 20%, health regen 1/1
+
+Shadow Image [1]
+[/b](Summoning shadow images, active skills, shortcuts: H key)
+: Cost: health, max sanity consumption, -2 EXP
+
+
+Musha Level List
+
+1 Level
+2 Level needs [EXP] 5 => Get [Lightning shield], [Shield]
+3 Level needs [EXP] 10 => Get [Valkyrie]
+4 Level needs [EXP] 30 => Get [Critical Hit]
+5 Level needs [EXP] 50 => Get [Lightning Attack]
+6 Level needs [EXP] 80 => Get [Lesser Cure]
+7 Level needs [EXP] 125 => Get [Berserk Phase]
+8 Level needs [EXP] 200 => Get [Flame shield]
+9 Level needs [EXP] 340 => Get [HP Regen(regenerate)]
+10 Level needs [EXP] 430 => Get [Freeze Attack], [Backstab]
+11 Level needs [EXP] 530 => Get [Critical Hit]
+12 Level needs [EXP] 640 => Get [Critical Hit]
+13 Level needs [EXP] 760 => Get [Critical Hit Master]
+14 Level needs [EXP] 890 => Get [Lightning Shield]
+15 Level needs [EXP] 1030 => Get [Lightning Shield]
+16 Level needs [EXP] 1180 => Get [Lightning Shield Master]
+17 Level needs [EXP] 1340 => Get [Lesser Cure Master]
+18 Level needs [EXP] 1510 => Get [Freeze Attack]
+19 Level needs [EXP] 1690 => Get [Freeze Attack]
+20 Level needs [EXP] 1880 => Get [Freeze Attack Master], [Backstab]
+21 Level needs [EXP] 2080 => Get [HP Regen]
+22 Level needs [EXP] 2290 => Get [HP Regen]
+23 Level needs [EXP] 2500 => Get [Frame shield]
+24 Level needs [EXP] 2850 => Get [Frame shield]
+25 Level needs [EXP] 3200 => Get [Frame shield Master]
+26 Level needs [EXP] 3700 => Get [Shield]
+27 Level needs [EXP] 4200 => Get [Shield Master]
+28 Level needs [EXP] 4700 => Get [berserk armor]
+29 Level needs [EXP] 5500 => Get [HP Regen Master]
+30 Level needs [EXP] 7000 => Get [Lightning Attack Master],[Backstab],[Shadow image]
+[/list]
+-------------------------------------------------------
+:::::::::::[Yamche infomation]::::::::::::
+
+Battle
+yamche can battle by click to enemy or musha hit from enemy
+retreat or run away during battle
+yamche automatically retreat
+[/b]
+ㄴ low health(20%) or far away distance from musha.
+press [stay~] command
+[/b]
+ㄴ immediately runaway from battle. but, this command does not follow musha.
+[Battle Command] hotkey (Y)
+[/b]
+
+:Aggrasive
+:Hunt : he find enemies and attack them.
+:Lightning: some times he casting lightning.(auto)
+:Armor : Absorb damage 40%
+
+Defensive
+:Guard : he does not fight before the Musha attack the enemy or enemy attacked her.
+:Armor : Absorb damage 60%
+
+
+Avoidance
+:Avoid : he never fight and avoid battle.
+:Armor : Absorb damage 100% (immune)
+[/list]
+
+::Yamche Growth of 8 steps.
+1-8step is Each requires [EXP]points. (There is no growth time)
+Yamche eat all the food, to Restores hit points 5%.
+And the food, depending on the value then +500,+300,+100, additional recovery.
+level 1 : happy birth !
+level 2 : exp 1
+level 3 : exp 20
+level 4 : exp 50
+level 5 : exp 100
+level 6 : exp 300
+level 7 : exp 400
+level 8 : exp 500
+(Yamceh level7=>turn to egg LV8 =>hatch to egg LV8 (very long time))
+
+Status
+Hunger rate : 25% of wilson
+::level1 health: 100 Hunger: 50 Damage: 10
+::level2~5: Increase each step, health +100, Hunger +10, Damage +10
+::level6~7: Increase each step, health +100, Hunger +20, Damage +10
+* 50% less health, very fast health regenerate and increast attack speed
+
+Yamche's special abilities
+[adjust Yamche's attack speed]
+* blue color Yamche is attack speed less than other color
+health more than 50% : normal attack speed
+health less than 50% : slow attack speed and he try ranged attack
+Healing Magic(spell)
+cast heal depending on musha's health
+cast cost is hunger points (-5~-10)
+spell name is Ccure or CCure or Kkure
+lightning shield
+defend, healing small health. cost is tyny hunger points
+freeze attck or reflect
+health less then 50%, freeze reflect
+if blue yamche (color), always reflect freeze and freeze attack
+frame reflect
+health less then 20%,frame reflect (very fast extinguish)
+Lightning Strike
+if full charged energy, he can cast lightning strike
+if blue yamche => frost lightning strike. but less damage
+Change behavior depending on the current state
+Yamche health more than 50%, Light turned on.
+Yamche health less than 50%, Light turned off.
+Low Health "Poo!"(talk) or cry(sound)
+Low Hunger "Kku!"(talk) or cry(sound)
+Phoenix sanity aura
+Hunger less than 25%, sanity aura - SMALL
+Hunger less than 60%, sanity aura 0
+Hunger more than 60%, sanity aura + TYNY
+Hunger more than 90%, sanity aura + SMALL
+
+::::::etc features::::::::::::::::::
+Blue yamche's container is [ice box]
+Grows, increasing the range of light.
+fire damage immune
+step 2~7 Yamche have inventory. (Step-by-step increase in container size)
+every 5-10 minutes [Glow dust] drop
+if Yamche is frozen state, mouse click to yamche then wake up instantly.
+if Musha dies, Yamche sacrifice himself for resurrect Musha.(he died, instead musha)
+if 'stay' command(right click) to yamche, yamche does not resurrection Musha.
+
+-freeze resistance depends on the current health of yamche.
+health 100-70% : If frozen, wakes up after 1.5 seconds.
+health 70-50% : wakes up after 0.5 seconds.
+health 50-20% : wakes up after 0.25 seconds.
+health 20%~ : yamche does not frozen
+[function of Campfire]
+*Drag materials(such as wood) to yamche then himself on fire. *musha fire immune
+yamche hat (only 1level yamche)
+Light according to hunger
+increase speed
+[/list]
+Random poop
+COOK: Poop random item(like special gem or glowberry) advanced food is good quality and more chance. (yamche loved Mandrake soup!)
+MEAT: guano, poop, wetgoop, spoiedfood, ash, or nothing
+VAGGIE: general seed, random specific seed (pimpkin, dragon fruit..), or nothing
+seeds: ash
+Crystal
+yamche ---feeding cristal--> each level egg
+Crystal give to yamche, light bulb flowers grow on the spot
+
+::::::::::::::::[item]::::::::::::::::::
+
+[Growable Items]
+- material list for repair : rock, flint, nitre, crystal, marble, hounds tooth, spider gland, gold, etc.
+- Crystal and exp essensense is repair many durability for the items. (use)
+- no auto consumption durability while wearing, but use mask or goggle or power blade is auto consumped durability.
+- frost series are more durability(50%)
+- special options
+- hit or hit from enemy, consumed random durability.
+- hit enemy, 5% chance to get [grow point] + 1.
+- hit from enemy, 50% chance to get [grow point] + 1.
+
+• Repair [Lucky points] chance :
+◦30% chance : +2
+◦20% chance : +5
+◦12% chance : +8
+
+-------------------------------------------
+-------------------------------------------
+-------------------------------------------
+
+phoenix egg (equipment)
+normal egg
++ low light,
++ small Insulation effect.
+-decrease movement speed
+cracked egg
++Large insulation effect
+-decrease movement speed
+-------------------------------------------
+
+Phoenix blade
+Upgrade and Level up System
+--------
+◦broken : growth possible, special attack damage 25(R key)
+sanity cost : 5
+--------
+◦1level : growth possible : LV5. increase basic damage and critical damage.
+special attack 48(R key)
+sanity cost : 5
+--------
+◦2level : growth possible : LV5. increase basic damage and critical damage.
+special attack 53(R key)
+sanity cost : 5
+--------
+◦3level : growth possible : LV5. increase basic damage and critical damage.
+special attack 85(R key)
+sanity cost : 5
+
+[Use]:[Power blade III]
+- Double Critical
+- Sanity regen
+- Light on (Large)
+- [Weapon magic (Right click)] : summon star light
+
+-------- Phoenix Axe
+◦Axe : growth possible : LV5. increase basic damage and critical damage and vampire.
+special attack 58, vampire 50 (R key)
+sanity cost : 5
+
+- [Weapon magic (Right click)] : teleport
+-------------------------------------------
+-------- Phoenix Frost blade
+growth possible : LV30. increase basic damage and freeze rate.
+LV 1 ~ 11 : special attack 0, Frozen 100% (R key)
+sanity cost : 4
+LV 11~ : special attack 50, Frozen 100% (R key)
+sanity cost : 4
+
+- Visual will automatically change every 10 level (item level)
+Power blade : [Use](right click to weapon)
+- speed up 25%
+- more freeze chance (75%)
+- light on
+- auto consumed durability.
+- [Special attack(R key)]: Freeze enemy.
+[Use]:[Power blade I](level 1~9)
+- Speed up 10
+- Light on (Small)
+- Power attack up(damage)
+- Auto consumed durability
+[Use]:[[Power blade II](level 10~19)
+- Speed up 20
+- Light on (MED)
+- Power attack up(Damage)
+- Auto consumed durability
+- Weapon magic (Right click)] : Blink
+[Use]:[[Power blade III](level 20~30)
+- Speed up 30
+- Light on (Large)
+- Power attack up(Damage)
+- Auto consumed durability
+- Weapon magic (Right click)] : Blink
+- Double Freeze
+
+-------------------------------------------
+
+Heart of Frost butterfly (frost heart) (armor, backpack)
+growth possible : LV15. increase armor rating and freeze chance
++small ice box (can't stack heatstone)
++waterproof
++more cooler in summer
+-------------------------------------------
+
+Frost armor (armor, backpack)
+growth possible : LV30. increase armor rating and freeze chance
++Speed increased by level
++medium ice box
++final arsorb damage 85%
++unlimited durability
++waterproof
++more cooler in summer
+
+-------------------------------------------
+-------- Frost Hammer
+◦ growth possible : LV30. increase basic damage and freeze rate.
+special attack 50, Frozen 100% (R key)
+sanity cost : 5
+- [Special attack(G key)] : Freeze and adds extra damage to enemy.
+- [Weapon magic (Right click)] : Summon Frozen tentacle
+•2slot fridge
+•long range but slow movement
+[Use]:[Open]
+- Decrease speed
+- Summon monster
+- Cooling body heat but no ice box
+[Use]:[Close]
+- Less decrease speed
+- Cooling ice box but no Cooling body
+-------------------------------------------
+
+Princess crown
+Equipment: hat.
+Shield form (gurad)
+when shield form, all the damage absorbed.
+friendly hound : Hound does not attack.
+resurrect
+if [Full mode] health regen
+-------------------------------------------
+
+Queen crown
+Equipment: hat.
+Shield form : (Same as above)
+friendly hound : (Same as above)
+healing shield: 20%chance, healing 20% and summon ghost hound.
+-------------------------------------------
+
+Bunny scout hat
+Equipment: hat
+growth possible : LV30
+increase armor and speed, attach or detach goggle.(right click)
+use goggles, increase speed up by level but auto consumed durability.
+- 30Level status -
+Defense : 40%
+Insulation : large
+goggle on : increase speed 40%
+-------------------------------------------
+
+Phoenix helmet
+growth possible : LV30
+increase armor, attach or detach mask.(right click)
+Wear the mask, movement speed is slow, but [sleeping gas] is available on defensive combat.
+-------------------------------------------
+
+Princess Armor
+Equipment: body
+growth possible : LV30.
+ㄴ increase armor rating and freeze chance and speed
+Huge pocket
+[Hunger 160~200], health regen 2
+[Hunger 40~160], health,sanity regen 1
+[Hunger 0~40], sanity regen 2
+insulation, waterproof
+Auto upgrade(musha's level) : Increases freezing reflection
+-------------------------------------------
+
+Musha Armor
+Equipment: body
+growth possible : LV30. increase armor rating and freeze chance
+Large pocket
+-------------------------------------------
+
+[Musha Flute]
+Heal nearby companions
+can be repair by glow dust.
+[/list]
+-------------------------------------------
+
+glow dust
+light
+-------------------------------------------
+
+frozen crystal
+light and cold fuel
+yamche ---feeding crystal--> each level egg
+Crystal give to yamche, light bulb flowers grow on the spot
+-------------------------------------------
+
+Energy essense
+Energy essense is EXP essense
+If you are close to EXP essence then, automatically gets the exp. but valkyrie mood then you can available pick up to essence and give it to yamche or repair item.
+-------------------------------------------
+
+musha's tent
+- tent
+- lantern
+- can repair by wood, twigs, grass.. all burnable things
+-------------------------------------------
+[Difficult option]
+-------------------------------------------
+[VERY EASY]
+- musha damage x 1.5
+- full buff monster meat and lasangna
+- full increase start health and grow health
+- full increase start sanity and grow sanity
+- EXP essence drop rating 10% and value is 1
+[EASY]
+- musha damage x 1
+- buff monster meat and lasangna
+- increase start health and grow health
+- increase start sanity and grow sanity
+- EXP essence drop rating 10% and value is 1
+[NORMAL]
+- musha damage x 0.75
+- normal buff monster meat and lasangna
+- normal start health and grow health
+- normal start sanity and grow sanity
+- EXP essence drop rating 10% and value is 1
+[HARD]
+- musha damage x 0.6
+- decrease buff monster meat and lasangna
+- decrease start health and grow health
+- decrease increase start sanity and grow sanity
+- EXP essence drop rating 40% and value is 2
+- [Affected enemies] health * 2
+[HARDCORE]
+- musha damage x 0.45
+- decrease buff monster meat and lasangna
+- decrease start health and grow health
+- decrease start sanity and grow sanity
+- [Affected enemies] health * 3, increase Damage or Speed
+- EXP essence drop rating 60% and value is 3
+[HELL]
+- musha damage x 0.3
+- decrease buff monster meat and lasangna
+- decrease start health and grow health
+- decrease start sanity and grow sanity
+- EXP essence drop rating 70% and value is 4
+- [Affected enemies] health * 4, full increase Damage or Speed
+---------------------------------------------
+[Adjust Giant Stat of Difficulty]
+[Hard]
+health x3
+damage x2
+attack speed +25
+[Hardcore]
+health x4.5
+damage x2.5
+attack speed +40
+[Hell]
+health x6
+damage x3
+attack speed +70
+---------------------------------------------
+**If you kill the giant then get more experience.
+**not changed skill damage
+---------------------------------------------
+[Kill Giant reward by Difficulty] (only DLC)
+all difficulty : red gem, blue gem
+normal : Glowdust
+hard : Princess Crown
+hardcore : Queen Crown
+hell : Queen crown, Musha's Armor
+---------------------------------------------
+[Affected enemies]
+Giants : deerclops, bearger, dragonfly, moose, mossling,
+Spiders: spider, spider_warrior, spiderqueen, spider_hider, spider_spitter, spider_dropper
+hounds: hound, firehound, icehound, warg
+Marsh monster : tentacle, merm
+Robot monster : rook, minotaur, bishop
+natural monster : tallbird, leif(tree gurad), birchnutdrake, eyeplant
+cave monster : bat, monkey
+winter hunter : walus
+SW(dlc) : snake, whale
+----------------------------------------------
+
+最后由 Sunnyyyyholic 编辑于; 2016年2月14日上午11:57
+
