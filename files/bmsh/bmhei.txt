@@ -25,6 +25,7 @@
 #==================================================#
 
 VER_BM=2.8
+
 VER_KEY=200701
 VER_JKS=200701
 VER_APP=200601
@@ -33,6 +34,11 @@ VER_OPH=200701
 
 URL_KEY=https://cnzixn.github.io/files/appkey/hei.kleientertainment.doNotStarveShipwrecked.key
 URL_JKS=https://cnzixn.github.io/files/appkey/hei.kleientertainment.doNotStarveShipwrecked.jks
+URL_APP=https://sj.71acg.com/hykb/201911/20191126jhht1.27.apk
+URL_OBB=https://sj.71acg.com/hykb/shujubao/main.50.com.kleientertainment.doNotStarveShipwrecked.obb
+URL_OPH=https://shrill-pond-3e81.hunsh.workers.dev/?q=https://github.com/cnzixn/bmsh-patch/archive/GIT200701.zip
+
+
 
 APP_SIGN=hei.kleientertainment.doNotStarveShipwrecked
 
@@ -408,7 +414,7 @@ function bmsh_sw_apk_exist() {
 		rm -f BMSH*.APP
 		bmsay "获取"$bmsh_sw_apk"...\n" 33m
 		#https://t.cn/A6LjRekn
-		wget -O ""$bmsh_sw_apk"" "https://sj.71acg.com/hykb/201911/20191126jhht1.27.apk"
+		wget -O ""$bmsh_sw_apk"" "$URL_APP"
 		if test "$?" -eq "0"; then
 			bmsay "获取"$bmsh_sw_apk"成功.\n" 32m
 			return 0
@@ -447,7 +453,7 @@ function bmsh_sw_obb_exist() {
 		rm -f BMSH*.OBB
 		bmsay "获取"$bmsh_sw_obb"...\n" 33m
 		#https://t.cn/A6LjRD2i
-		wget -O ""$bmsh_sw_obb"" "https://sj.71acg.com/hykb/shujubao/main.50.com.kleientertainment.doNotStarveShipwrecked.obb"
+		wget -O ""$bmsh_sw_obb"" "$URL_OBB"
 		if test "$?" -eq "0"; then
 			bmsay "获取"$bmsh_sw_obb"成功.\n" 32m
 			return 0
@@ -474,7 +480,7 @@ function bmsh_sw_zip_exist() {
 		rm -f BMSH*.OPH
 		bmsay "获取"$bmsh_sw_zip"...\n" 33m
 		#https://t.cn/A6LjRekn
-		get_file_github "$VER_OPH" "$bmsh_sw_zip"
+		wget -O ""$bmsh_sw_zip"" "$URL_OBB"
 		if test "$?" -eq "0"; then
 			bmsay "获取"$bmsh_sw_zip"成功.\n" 32m
 			return 0
