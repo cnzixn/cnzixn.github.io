@@ -24,7 +24,7 @@
 #    移除模组                 rm_to_obb ...
 #==================================================#
 
-VER_BM=2.7
+VER_BM=2.8
 VER_KEY=200701
 VER_JKS=200701
 VER_APP=200601
@@ -33,6 +33,8 @@ VER_OPH=200701
 
 URL_KEY=https://cnzixn.github.io/files/appkey/hei.kleientertainment.doNotStarveShipwrecked.key
 URL_JKS=https://cnzixn.github.io/files/appkey/hei.kleientertainment.doNotStarveShipwrecked.jks
+
+APP_SIGN=hei.kleientertainment.doNotStarveShipwrecked
 
 KLEI_OBB_SIZE=521631690
 KLEI_OBB=main.50.com.kleientertainment.doNotStarveShipwrecked
@@ -291,7 +293,7 @@ currenttime="$(date +%s -d "$(date '+%Y-%m-%d %H:%M:%S')")"
 lasttime=$(date +%s -d "$DATA_LASTTIME")
 difftime=$(expr $currenttime - $lasttime)
 	
-	if test "$difftime" -gt 30 ; then
+	if test "$difftime" -gt 5 ; then
 		echo "获取最新文件bmhei.txt"
 		cd /data/data/com.termux/files/home
 		wget -O ".bmhei.txt" "https://cnzixn.github.io/files/bmsh/bmhei.txt"
@@ -691,7 +693,7 @@ function add_to_apk() {
 	fi
 
 	bmsay "生成APP签名验证文件...\n" 33m
-	apksigner -p bmsh_sw "BMSH"$VER_JKS".JKS" "BMSH_SIGN.APK" "TEMP.APK"
+	apksigner -p "$APP_SIGN" "BMSH"$VER_JKS".JKS" "BMSH_SIGN.APK" "TEMP.APK"
 	if test "$?" -eq "0"; then
 		bmsay "生成APP签名验证文件成功.\n" 32m
 	else
