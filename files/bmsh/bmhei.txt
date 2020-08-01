@@ -31,10 +31,10 @@ VER_APP=200601
 VER_OBB=200601
 VER_OPH=200701
 PATH_OBB="/sdcard/Android/obb/hei.kleientertainment.doNotStarveShipwrecked/main.50.hei.kleientertainment.doNotStarveShipwrecked.obb"
-if [ ! -f "/sdcard/Android/obb/hei.kleientertainment.doNotStarveShipwrecked" ]; then
-	PATH_OBB="/sdcard/Android/obb/bai.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb"
-	if [ ! -f "/sdcard/Android/obb/bai.kleientertainment.doNotStarveShipwrecked" ]; then
-		PATH_OBB="/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb"
+if [ ! -d "/sdcard/Android/obb/hei.kleientertainment.doNotStarveShipwrecked" ]; then
+	PATH_OBB="/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb"
+	if [ ! -d "/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked" ]; then
+		PATH_OBB="/sdcard/Android/obb/bai.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb"
 	fi
 fi
 
