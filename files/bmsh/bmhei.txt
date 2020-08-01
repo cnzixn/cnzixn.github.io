@@ -510,6 +510,7 @@ function rm_to_obb() {
 	ids=$(echo "$*" )
 	for id in $ids ; do
 		id=$(echo ${id%%.*})
+		id=$(echo $id | tr -cd "[0-9]" )
 		if test -n "$id"; then
 			id=$(expr $id + 0)
 			fname=$(printf "BM%04d" "$id")
@@ -555,7 +556,8 @@ function add_to_obb() {
 	
 	ids=$(echo "$ext""$*" )
 	for id in $ids ; do
-	  id=$(echo ${id%%.*})
+		id=$(echo ${id%%.*})
+		id=$(echo $id | tr -cd "[0-9]" )
 	  id=$(expr $id + 0)
 	  if test "$id" -eq "0"; then
 	  id=$VER_OPH
