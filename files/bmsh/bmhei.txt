@@ -25,16 +25,23 @@
 #==================================================#
 
 VER_BM=2.7
-VER_KEY=200601
-VER_JKS=200601
+VER_KEY=200701
+VER_JKS=200701
 VER_APP=200601
 VER_OBB=200601
 VER_OPH=200701
-PATH_OBB="/sdcard/Android/obb/hei.kleientertainment.doNotStarveShipwrecked/main.50.hei.kleientertainment.doNotStarveShipwrecked.obb"
+
+URL_KEY=https://cnzixn.github.io/files/appkey/hei.kleientertainment.doNotStarveShipwrecked.key
+URL_JKS=https://cnzixn.github.io/files/appkey/hei.kleientertainment.doNotStarveShipwrecked.jks
+
+KLEI_OBB_SIZE=521631690
+KLEI_OBB=main.50.com.kleientertainment.doNotStarveShipwrecked
+
+PATH_OBB="/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb"
 if [ ! -d "${PATH_OBB%/*}" ]; then
 	PATH_OBB="/sdcard/Android/obb/bai.kleientertainment.doNotStarveShipwrecked/main.50.bai.kleientertainment.doNotStarveShipwrecked.obb"
 	if [ ! -d "${PATH_OBB%/*}" ]; then
-		PATH_OBB="/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb"
+		PATH_OBB="/sdcard/Android/obb/hei.kleientertainment.doNotStarveShipwrecked/main.50.hei.kleientertainment.doNotStarveShipwrecked.obb"
 	fi
 fi
 
@@ -343,9 +350,11 @@ function bmsh_sw_key_exist() {
 		cp $bmsh_sw_key /sdcard/MT2/keys/
 		return 0
 	else
+		rm -f BMSH*.KEY
 		bmsay "获取"$bmsh_sw_key"...\n" 33m
-		wget -O "$bmsh_sw_key" "https://cnzixn.github.io/files/bmsh/bmsh_sw.key"
+		wget -O "$bmsh_sw_key" "$URL_KEY"
 		if test "$?" -eq "0"; then
+			rm -f /sdcard/MT2/keys/BMSH*.KEY
 			bmsay "获取"$bmsh_sw_key"成功.\n" 32m
 			cp $bmsh_sw_key /sdcard/MT2/keys/
 			return 0
@@ -368,9 +377,11 @@ function bmsh_sw_jks_exist() {
 		cp "$bmsh_sw_jks" "/sdcard/MT2/jks/"
 		return 0
 	else
+		rm -f BMSH*.JKS
 		bmsay "获取"$bmsh_sw_jks"...\n" 33m
-		wget -O "$bmsh_sw_jks" "https://cnzixn.github.io/files/bmsh/bmsh_sw.jks"
+		wget -O "$bmsh_sw_jks" "$URL_JKS"
 		if test "$?" -eq "0"; then
+			rm -f /sdcard/MT2/jks/BMSH*.JKS
 			bmsay "获取"$bmsh_sw_jks"成功.\n" 32m
 			cp "$bmsh_sw_jks" "/sdcard/MT2/jks/"
 			return 0
@@ -392,6 +403,7 @@ function bmsh_sw_apk_exist() {
 		bmsay "获取"$bmsh_sw_apk"成功.\n" 32m
 		return 0
 	else
+		rm -f BMSH*.APP
 		bmsay "获取"$bmsh_sw_apk"...\n" 33m
 		#https://t.cn/A6LjRekn
 		wget -O ""$bmsh_sw_apk"" "https://sj.71acg.com/hykb/201911/20191126jhht1.27.apk"
@@ -411,17 +423,17 @@ function bmsh_sw_apk_exist() {
 function bmsh_sw_obb_exist() {
 	bmsh_sw_obb=BMSH"$VER_OBB".OBB
 	size=$(get_file_size "$bmsh_sw_obb")
-	if test "$size" -eq "521631690"; then
+	if test "$size" -eq "$KLEI_OBB_SIZE"; then
 		#已存在
 		bmsay "获取"$bmsh_sw_obb"成功.\n" 32m
 		return 0
 	else
 		SAVEIFS=$IFS
 		IFS=$(echo -en "\n\b")
-		for obb in $(find "/sdcard/" -name "main.50.com.kleientertainment.doNotStarveShipwrecked*.obb"); do
+		for obb in $(find "/sdcard/" -name "$KLEI_OBB*.obb"); do
 			sw_obb="$obb"
 			size=$(get_file_size "$sw_obb")
-			if test "$size" -eq "521631690"; then
+			if test "$size" -eq "$KLEI_OBB_SIZE"; then
 				#已存在
 				bmsay "获取"$bmsh_sw_obb"成功.\n" 32m
 				mv "$sw_obb" "$bmsh_sw_obb"
@@ -429,7 +441,8 @@ function bmsh_sw_obb_exist() {
 			fi
 		done
 		IFS=$SAVEIFS
-
+		
+		rm -f BMSH*.OBB
 		bmsay "获取"$bmsh_sw_obb"...\n" 33m
 		#https://t.cn/A6LjRD2i
 		wget -O ""$bmsh_sw_obb"" "https://sj.71acg.com/hykb/shujubao/main.50.com.kleientertainment.doNotStarveShipwrecked.obb"
@@ -456,6 +469,7 @@ function bmsh_sw_zip_exist() {
 		bmsay "获取"$bmsh_sw_zip"成功.\n" 32m
 		return 0
 	else
+		rm -f BMSH*.OPH
 		bmsay "获取"$bmsh_sw_zip"...\n" 33m
 		#https://t.cn/A6LjRekn
 		get_file_github "$VER_OPH" "$bmsh_sw_zip"
