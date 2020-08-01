@@ -38,11 +38,17 @@ URL_APP=https://sj.71acg.com/hykb/201911/20191126jhht1.27.apk
 URL_OBB=https://sj.71acg.com/hykb/shujubao/main.50.com.kleientertainment.doNotStarveShipwrecked.obb
 URL_OPH=https://shrill-pond-3e81.hunsh.workers.dev/?q=https://github.com/cnzixn/bmsh-patch/archive/GIT200701.zip
 
+SIZE_KEY=1000
+SIZE_JKS=1000
+SIZE_APP=6880098
+SIZE_OBB=521631690
+SIZE_OPH=6000000
+
 
 
 APP_SIGN=hei.kleientertainment.doNotStarveShipwrecked
 
-KLEI_OBB_SIZE=521631690
+
 KLEI_OBB=main.50.com.kleientertainment.doNotStarveShipwrecked
 
 PATH_OBB="/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb"
@@ -352,7 +358,7 @@ fi
 function bmsh_sw_key_exist() {
 	bmsh_sw_key=BMSH"$VER_KEY".KEY
 	size=$(get_file_size "$bmsh_sw_key")
-	if test "$size" -eq "1397"; then
+	if test "$size" -gt "$SIZE_KEY"; then
 		#已存在
 		bmsay "获取"$bmsh_sw_key"成功.\n" 32m
 		cp $bmsh_sw_key /sdcard/MT2/keys/
@@ -379,7 +385,7 @@ function bmsh_sw_key_exist() {
 function bmsh_sw_jks_exist() {
 	bmsh_sw_jks=BMSH"$VER_JKS".JKS
 	size=$(get_file_size "$bmsh_sw_jks")
-	if test "$size" -eq "1286"; then
+	if test "$size" -gt "$SIZE_JKS"; then
 		#已存在
 		bmsay "获取"$bmsh_sw_jks"成功.\n" 32m
 		cp "$bmsh_sw_jks" "/sdcard/MT2/jks/"
@@ -406,7 +412,7 @@ function bmsh_sw_jks_exist() {
 function bmsh_sw_apk_exist() {
 	bmsh_sw_apk=BMSH"$VER_APP".APP
 	size=$(get_file_size "$bmsh_sw_apk")
-	if test "$size" -eq "6880098"; then
+	if test "$size" -eq "$SIZE_APP"; then
 		#已存在
 		bmsay "获取"$bmsh_sw_apk"成功.\n" 32m
 		return 0
@@ -431,7 +437,7 @@ function bmsh_sw_apk_exist() {
 function bmsh_sw_obb_exist() {
 	bmsh_sw_obb=BMSH"$VER_OBB".OBB
 	size=$(get_file_size "$bmsh_sw_obb")
-	if test "$size" -eq "$KLEI_OBB_SIZE"; then
+	if test "$size" -eq "$SIZE_OBB"; then
 		#已存在
 		bmsay "获取"$bmsh_sw_obb"成功.\n" 32m
 		return 0
@@ -441,7 +447,7 @@ function bmsh_sw_obb_exist() {
 		for obb in $(find "/sdcard/" -name "$KLEI_OBB*.obb"); do
 			sw_obb="$obb"
 			size=$(get_file_size "$sw_obb")
-			if test "$size" -eq "$KLEI_OBB_SIZE"; then
+			if test "$size" -eq "$SIZE_OBB"; then
 				#已存在
 				bmsay "获取"$bmsh_sw_obb"成功.\n" 32m
 				mv "$sw_obb" "$bmsh_sw_obb"
@@ -472,7 +478,7 @@ function bmsh_sw_obb_exist() {
 function bmsh_sw_zip_exist() {
 	bmsh_sw_zip=BMSH"$VER_OPH".OPH
 	size=$(get_file_size "$bmsh_sw_zip")
-	if test "$size" -gt "6000000"; then
+	if test "$size" -gt "$SIZE_OPH"; then
 		#"$bmsh_sw_zip"已存在
 		bmsay "获取"$bmsh_sw_zip"成功.\n" 32m
 		return 0
@@ -480,7 +486,7 @@ function bmsh_sw_zip_exist() {
 		rm -f BMSH*.OPH
 		bmsay "获取"$bmsh_sw_zip"...\n" 33m
 		#https://t.cn/A6LjRekn
-		wget -O ""$bmsh_sw_zip"" "$URL_OBB"
+		wget -O ""$bmsh_sw_zip"" "$URL_OPH"
 		if test "$?" -eq "0"; then
 			bmsay "获取"$bmsh_sw_zip"成功.\n" 32m
 			return 0
