@@ -18,7 +18,7 @@
 #    检查BMSH200601.JKS     bmsh_sw_jks_exist
 #    检查BMSH200601.APP     bmsh_sw_apk_exist
 #    检查BMSH200601.OBB    bmsh_sw_obb_exist
-#    检查BMSH200601.OPH     bmsh_sw_zip_exist
+#    检查BMSH200601.OPH     bmsh_sw_oph_exist
 #    生成整合包               add_to_apk ...
 #    生成数据包               add_to_obb ...
 #    移除模组                 rm_to_obb ...
@@ -32,11 +32,13 @@ VER_APP=200601
 VER_OBB=200601
 VER_OPH=200701
 
+GIT_OPH=200701
+
 URL_KEY=https://cnzixn.github.io/files/appkey/hei.kleientertainment.doNotStarveShipwrecked.key
 URL_JKS=https://cnzixn.github.io/files/appkey/hei.kleientertainment.doNotStarveShipwrecked.jks
 URL_APP=https://sj.71acg.com/hykb/201911/20191126jhht1.27.apk
 URL_OBB=https://sj.71acg.com/hykb/shujubao/main.50.com.kleientertainment.doNotStarveShipwrecked.obb
-URL_OPH=https://shrill-pond-3e81.hunsh.workers.dev/?q=https://github.com/cnzixn/bmsh-patch/archive/GIT200701.zip
+URL_OPH=https://shrill-pond-3e81.hunsh.workers.dev/?q=https://github.com/cnzixn/bmsh-patch/archive/GIT$GIT_OPH.zip
 
 SIZE_KEY=1000
 SIZE_JKS=1000
@@ -294,7 +296,10 @@ function get_file_github() {
 			file="$2"
 		fi
 		wget -O "$file" "$url"
-		return $?
+		if [ -f "$file" ]; then
+			return 0
+		fi
+		return 1
 	fi
 }
 
@@ -475,23 +480,24 @@ function bmsh_sw_obb_exist() {
 
 
 #检查OPH
-function bmsh_sw_zip_exist() {
-	bmsh_sw_zip=BMSH"$VER_OPH".OPH
-	size=$(get_file_size "$bmsh_sw_zip")
+function bmsh_sw_oph_exist() {
+	bmsh_sw_oph=BMSH"$VER_OPH".OPH
+	size=$(get_file_size "$bmsh_sw_oph")
 	if test "$size" -gt "$SIZE_OPH"; then
-		#"$bmsh_sw_zip"已存在
-		bmsay "获取"$bmsh_sw_zip"成功.\n" 32m
+		#"$bmsh_sw_oph"已存在
+		bmsay "获取"$bmsh_sw_oph"成功.\n" 32m
 		return 0
 	else
 		rm -f BMSH*.OPH
-		bmsay "获取"$bmsh_sw_zip"...\n" 33m
+		bmsay "获取"$bmsh_sw_oph"...\n" 33m
 		#https://t.cn/A6LjRekn
-		wget -O ""$bmsh_sw_zip"" "$URL_OPH"
+		#wget -O ""$bmsh_sw_oph"" "$URL_OPH"
+		get_file_github "$GIT_OPH" "$bmsh_sw_oph"
 		if test "$?" -eq "0"; then
-			bmsay "获取"$bmsh_sw_zip"成功.\n" 32m
+			bmsay "获取"$bmsh_sw_oph"成功.\n" 32m
 			return 0
 		else
-			bmsay "获取"$bmsh_sw_zip"失败.\n" 31m
+			bmsay "获取"$bmsh_sw_oph"失败.\n" 31m
 			pause
 			main
 		fi
@@ -577,7 +583,7 @@ function add_to_obb() {
 	fi
 	new=$(7z l "$PATH_OBB" "mods/BM0000/" | grep -Eo "BM[0-9]+" | tr ' ' '\n' | uniq | sort -n)
 	if [ ! $new ]; then
-		ext=" $VER_OPH 999999 "
+		ext=" $GIT_OPH 999999 "
 	fi
 	rm -rf temp.zip temp
 	mkdir -p temp
@@ -588,7 +594,7 @@ function add_to_obb() {
 		id=$(echo $id | tr -cd "[0-9]" )
 	  id=$(expr $id + 0)
 	  if test "$id" -eq "0"; then
-	  id=$VER_OPH
+	  id=$GIT_OPH
 	  fi
 		if test "$id" -gt "0" ; then
 			fname=$(printf "BM%04d" "$id")
@@ -657,7 +663,7 @@ function add_to_apk() {
 
 	bmsh_sw_obb_exist
 
-	bmsh_sw_zip_exist
+	bmsh_sw_oph_exist
 
 	rm -rf assets patch
 
@@ -681,12 +687,12 @@ function add_to_apk() {
 		fi
 	fi
 
-	bmsay "解压"$bmsh_sw_zip"...\n" 33m
-	7z x -tzip ""$bmsh_sw_zip"" -opatch -aoa
+	bmsay "解压"$bmsh_sw_oph"...\n" 33m
+	7z x -tzip ""$bmsh_sw_oph"" -opatch -aoa
 	if test "$?" -eq "0"; then
-		bmsay "解压"$bmsh_sw_zip"成功.\n" 32m
+		bmsay "解压"$bmsh_sw_oph"成功.\n" 32m
 	else
-		bmsay "解压"$bmsh_sw_zip"失败.\n" 31m
+		bmsay "解压"$bmsh_sw_oph"失败.\n" 31m
 		pause
 		main
 	fi
