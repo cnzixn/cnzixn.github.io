@@ -522,22 +522,22 @@ function rm_to_obb() {
 		return 1
 	fi
 
+	if test "$1" -lt "0"; then
+		bmsay "移除全部数据包...\n" 33m
+		rm -rf "${PATH_OBB%/*}"
+		if test "$?" -eq "0"; then
+			bmsay "移除全部数据包成功.\n" 32m
+		else
+			bmsay "移除全部数据包失败.\n" 31m
+		fi
+		pause
+		return $?
+	fi
+
 	if test ! -f "$PATH_OBB"; then
 		bmsay "你好像还没有“安装”文件.\n" 31m
 		pause
 		return 1
-	fi
-
-	if test "$1" -lt "0"; then
-		bmsay "移除“全部”已安装文件...\n" 33m
-		rm $PATH_OBB
-		if test "$?" -eq "0"; then
-			bmsay "移除“全部”已安装文件成功.\n" 32m
-		else
-			bmsay "移除“全部”已安装文件失败.\n" 31m
-		fi
-		pause
-		return $?
 	fi
 
 	
