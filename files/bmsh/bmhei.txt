@@ -24,7 +24,7 @@
 #    移除模组                 rm_to_obb ...
 #==================================================#
 
-VER_BM=3.0
+VER_BM=3.1
 
 VER_KEY=200701
 VER_JKS=200701
@@ -69,9 +69,8 @@ echo $(date '+%Y-%m-%d %H:%M:%S') >"$FILE_LASTTIME"
 
 function main() {
 	#主程序
-	if test $? -ne 0 ; then
-		exit 99
-	fi
+	
+	path_obb
 
 	mkdir -p /sdcard/bmsh >/dev/null 2>&1
 
@@ -535,7 +534,6 @@ function rm_to_obb() {
 		else
 			bmsay "移除全部数据包失败.\n" 31m
 		fi
-		path_obb
 		pause
 		return $result
 	fi
@@ -753,7 +751,6 @@ function add_to_apk() {
 }
 
 
-path_obb
 if [ $# == 0 ]; then
 	update
 	main 0
