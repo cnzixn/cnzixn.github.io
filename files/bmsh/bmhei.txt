@@ -54,12 +54,7 @@ APP_SIGN=hei.kleientertainment.doNotStarveShipwrecked
 KLEI_OBB=main.50.com.kleientertainment.doNotStarveShipwrecked
 
 PATH_OBB="/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb"
-if [ ! -d "${PATH_OBB%/*}" ]; then
-	PATH_OBB="/sdcard/Android/obb/bai.kleientertainment.doNotStarveShipwrecked/main.50.bai.kleientertainment.doNotStarveShipwrecked.obb"
-	if [ ! -d "${PATH_OBB%/*}" ]; then
-		PATH_OBB="/sdcard/Android/obb/hei.kleientertainment.doNotStarveShipwrecked/main.50.hei.kleientertainment.doNotStarveShipwrecked.obb"
-	fi
-fi
+
 
 
 
@@ -258,6 +253,15 @@ function bmsay() {
 function pause() {
 	bmsay "按回车继续...\n" 34m 0
 	read -s -n 1 press
+}
+
+function path_obb(){
+	if [ ! -d "${PATH_OBB%/*}" ]; then
+	PATH_OBB="/sdcard/Android/obb/bai.kleientertainment.doNotStarveShipwrecked/main.50.bai.kleientertainment.doNotStarveShipwrecked.obb"
+		if [ ! -d "${PATH_OBB%/*}" ]; then
+			PATH_OBB="/sdcard/Android/obb/hei.kleientertainment.doNotStarveShipwrecked/main.50.hei.kleientertainment.doNotStarveShipwrecked.obb"
+		fi
+	fi
 }
 
 
@@ -525,13 +529,15 @@ function rm_to_obb() {
 	if test "$1" -lt "0"; then
 		bmsay "移除全部数据包...\n" 33m
 		rm -rf "${PATH_OBB%/*}"
-		if test "$?" -eq "0"; then
+		result="$?"
+		if test "$result" -eq "0"; then
 			bmsay "移除全部数据包成功.\n" 32m
 		else
 			bmsay "移除全部数据包失败.\n" 31m
 		fi
+		path_obb
 		pause
-		return $?
+		return $result
 	fi
 
 	if test ! -f "$PATH_OBB"; then
@@ -747,7 +753,7 @@ function add_to_apk() {
 }
 
 
-
+path_obb
 if [ $# == 0 ]; then
 	update
 	main 0
