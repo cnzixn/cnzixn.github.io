@@ -24,7 +24,7 @@
 #    移除模组                 rm_to_obb ...
 #==================================================#
 
-VER_BM=3.1
+VER_BM=3.2
 
 VER_KEY=200701
 VER_JKS=200701
@@ -324,6 +324,7 @@ difftime=$(expr $currenttime - $lasttime)
 			cp -rf ".bmhei.txt" "$PREFIX/bin/hei"
 			chmod +x "$PREFIX/bin/hei"
 			hei
+			exit
 		fi
 	fi
 
