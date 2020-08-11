@@ -1,0 +1,141 @@
+Wilton's back for a fun experience, with high-risk high-reward gameplay!
+
+This is NOT an overpowered character mod! (Or at least I hope it shouldn't feel like one)
+I intended for this character to be challenging with some fun elements.
+He is intended to be very challenging in the beginning, but have nice items at different stages of progression to allow a sort of skeleton flair with his playstyle to help him out. Like a baseball bone bat that ♥♥♥♥ing explodes!
+Let me know what you think! :D!
+
+So, let's get to the meat an- ahem, bones and bones of this mod:
+
+Wilton is a skeleton. He's very fragile! He's also quite insane because he's, y'know, undead. Wilton now has hunger, because all reanimated corpses need a snack every now and again.
+
+Starting health = 50
+Starting sanity = 50
+Starting hunger = 75
+
+Wilton can't really talk, what with the whole not-having-lungs-to-talk-with spiel. He sure does give an attempt to communicate, though!
+
+Wilton hurts 10x more from starving, because no reserve energy from being a skeleton (Do NOT starve!)
+
+Wilton is near death at all times. He's going bonkers, yo'. In addition to having reduced max sanity, negative sanity sources (Night, monsters, etc.) are 33% more intense
+
+Wilton is hurt by temperature 3x more. No body regulation sucks, man.
+
+Wilton dries off 10% faster, because bones are dry. 10/10 Logic, right?
+
+Wilton starts off with a 15% speed penalty. Don't worry, though. You can get it back!... at a cost.
+
+Wilton can now eat nightmare fuel! Each nightmare fuel he eats (up to 20) grants him a 2% speed increase, up to 40%, which minus the -15% speed penalty results in a 25% speed increase.
+
+Eating nightmare fuel reduces your max health and sanity by 1 each time. Oh, it also increases hunger rate by 5% each time, up to 100% increase in hunger rate (Means you get hungry 2x as fast).
+
+Eating nightmare fuel also consumes all of your sanity, because wow that is unsafe. Oh, it also consumes 15 health and 25 hunger each time, because WOW that is unhealthy, even for a skeleton. Means you can't spam eat nightmare fuel, you have to plan ahead.
+
+Wilton is a skeleton. You know what loooooveeess boonnnessss? Hounds! Hound waves will be much stronger.
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Now for the interesting stuff. I added custom recipes!
+Note that all items besides bone shards are infinite use, because bone is strong!
+Bone shard
+
+-Costs 5 hounds tooth to make
+
+Skelerang
+
+-Does 7.5 damage.
+-Consumes 5 sanity on use.
+-Slightly slower than a normal boomerang.
+-Costs 2 boneshards to craft.
+-Art and original item by Debugman18
+
+The ranged aspect of this is a bit overpowered, so I balanced it out with sanity consumption and low damage.
+
+Frost Skelerang
+
+- Does no damage
+- Freezes enemies
+- Quickly freezes the user if used too much (2 times back to back freezes the player instantly)
+- Consumes 20 sanity on use
+- Costs 5 bone shards, 2 blue gems, and 10 nightmare fuel to craft
+
+Use with caution, this thing can make you craaazzyyyy!
+
+Nightmare skelerang
+
+- 25 Damage (With an additional 25 armor piercing self damage, so be careful!)
+- Double speed
+- 25% Increased range
+- Sanity is set to 0 while equipped, and reverted back to normal when unequipped with a penalty of 10 sanity
+- 10 health and hunger consumed on use (It gets its power from you!)
+- Costs 20 bone shards, 2 purple gems, and 40 nightmare fuel at a Shadow Manipulator
+
+This can quickly kill you if used too many times or if you miss a couple of times. It's a gamble!
+
+Skelecane
+
+-10% movement speed increase
+-Costs 2 bone shards and 1 nightmare fuel to craft
+- Discount pimp stick
+
+Skelebat
+
+- Does 15 damage (2 Damage less than a cane)
+- Charges for 30 seconds while equipped
+- When fully charged, deal 3x damage (Complete with explosion FX!)
+- Cost 5 bone shard, 5 hounds tooth, and 5 nightmare fuel to craft
+- Explosion is purely visual, NO AOE!
+
+(Spoiler is an upgrade to the skelebat. Hover over if you want to find out what it is and how to get it!)
+- Nightmare Skelebat!
+- Add in 10 nightmare fuel to the skelebat (I'll most likely change this later to be more expensive when I have the time)
+Note: Upgrade progress is a little bugged. It'll reset on exit+reenter and the durability of the item will show 100% when 'fueled' even though it'll retain its current durability when equipped! Other than that it should work perfectly fine!
+- Does 25 damage normally
+- Takes longer to charge
+- Costs sanity to charge
+- Charges a small amount on each attack
+- Does a massive explosion for 3x damage on full charge and regain 10 sanity (Because DAMN that felt good!)
+- Explosion is purely visual, NO AOE!
+
+Nightmare Skelehelm
+
+-Absorbs one hit every 10 seconds
+-After absorbing a hit, provides no defense until recharged
+-Does not charge while unequipped, to deter cheap armor swapping
+-Costs 10 bone shards, 1 purple gem, and 15 nightmare fuel at a Shadow Manipulator
+-The texture is from DST c:
+
+Sadly some attacks from enemies still pierce the hit absorption for some reason (i have no clue why, it should negate 100% of enemy damage when full, but perhaps they have armor penetration). Please let me know if you see it happen with details so I can try to fix it :)
+
+Nightmare Ribs
+
+- Damage reduction percentage is based on charge
+- Charge is gained on attack (+12.5% charge on hit)
+- Charge constantly reduces until 0% (The discharge rate increases based on how high the charge is at)
+- Charge is halved when damage is taken
+- At 100% charge, activate a Thulecite Crown forcefield and reset charge back to 0% (Charge cannot be regained while the forcefield is active)
+- Costs 20 bone shard, 2 purple gems, and 20 nightmare fuel to craft at a Shadow Manipulator
+-The texture is also from DST :D
+
+Even though this may seem powerful at first, it's the epitome of the high-risk, high-reward playstyle. This armor is great for bosses and slower targets that are heavy hitting, but melts when it comes to being stunlocked, as each hit halves its charge. The constant discharging means you have to be quick with your attacks and dodges, otherwise your damage reduction will be low and you won't be able to activate the forcefield. This synergizes well with the Nightmare Skelehelm!
+
+Divining Bone
+
+- Acts similar to divining rod
+- Locates the eyebone and fishbone!
+- Costs 1 Divining Rod, 5 bone shards, and 5 nightmare fuel
+
+It's a skeleton's duty to be able to figure out where unique and useful bones are!
+
+As of right now my time's been limited, so I'm going to take a break from updating this mod. Every major bug has been fixed, though, so it should work perfectly fine!
+
+I hope you enjoy!
+
+If you encounter any bugs, please report them to me if you want so I can get it fixed. I haven't done extensive testing with this because I have limited time due to college. Yayyyy
+
+Also if you have a suggestion feel free to say so. Make sure it's uh, skeleton related. Don't make it overpowered, either (e.g. full night vision or instakill weapons).
+
+Credit to Debugman18 for original mod
+Credit to KiddyCorky for wilton character select portrait
+
+This mod works best with Reign of Giants. It should work just fine with the vanilla game, but please report any crashes if they happen.
+Shipwrecked should work just fine.
