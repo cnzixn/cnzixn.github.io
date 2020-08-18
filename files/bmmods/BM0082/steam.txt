@@ -1,0 +1,146 @@
+New HD textures for Wil, and has a new, much higher quality piano voice (played horribly by yours truly :p)!
+
+See STATS for info about the Wrenches, Potions, robot, and William himself!
+
+Fixed the Blueprints dissappearing without summoning a robot when the player doesn't have enough gears!
+
+I love making mods for Don't Starve. Mostly just testing out all the possible perks, stats, etc. So, here's one of my personal favorites!
+
+William J. Danninghar was an inventor - much like Wilson. But his interests were more into robots and mechanical stuff. He now finds himself in a strange, unfamiliar place full of creatures beyond his wildest imaginings.
+
+STATS:
+-Slower than most characters by just a small bit.
+-Is weaker than most characters.
++Starts off with 5 gears and a cane
+Average hunger
+-Low health
++Very high sanity
++Already knows the Science machine recipes (like Wickerbottom)
++Very slow passive health regen.
++Has a 0.1x armour bonus
++Enters Nightmare Form when sanity is below 45.
+
+Nightmare Form stats (that differ from normal William's)
++115 health
++ Deals more damage
++Replaces science bonus with magic bonus (Prestihatilator recipes become available)
++Gets a cool new voice
+-Hunger depletes significantly faster.
+
+You need to craft mechanical what-not (a new item) and a shell for the specific robot to creat your robot. These pieces are found in the Refine tab!
+
+You can use a hammer or wrench to tell your companion to leave you alone and then feed them a carrot (seeds for reapers) or gears to heal them and make them follow you again!
+
+Mechanical Butler:
+Controlled by a rabbit
++High health
++Helps mind and chop trees.
++Can heal with carrots
++The controlling rabbit will run out of the robot when it dies
++emits smoke
++Acts as a container.
+-slowish movement speed
++Becomes Nightmare Butler when player's sanity is below 100.
+
+Mechanical Reaper:
+Controlled by a crow
++Teleports away from combat if attacked
++Can heal with gears
++The controlling crow will fly out of the robot when it dies
++Very fast attack speed
+-Modertate-low health
+-Low-med damage
+
+Mechanical Brute:
+Controlled by a rabbit
++Very high health
++High damage
++Can heal with gears
++The controlling rabbit will run out of the robot when it dies
+-Very slow attack speed
+-Slow movement speed
++Becomes Nightmare Brute when player's sanity is below 100.
+
+Craftable Wrenches! And special back-pack (which doesn't actually store things, it's armour)
+
+Pointy Wrench:
+Craftabe under science. Requires Alchemy Engine.
+Deals 40(If I remember correctly) damage.
+Has 150 uses.
+Can be used as mining pick.
+Can be used as a hammer.
+
+Nightmare Wrench:
+Craftable under Magic. Requires Prestihatilator.
+Deals 50 damage.
+150 uses.
+Can be used as mining pick.
+Drains sanity when equipped.
+Regain 2.5 sanity on hit.
+Can be used as a hammer
+
+Mechanic's back-up:
+Blocks 75 damage
+1050 durability
+Can be activated to turn it into a shield via extending plates to block 100 damage (treeguards still do 1 damage)
+Has neat effects
+
+Potions:
+
+Concentrated Nightmare Fuel:
+Craftable under Magic. Requires Alchemy Engine.
+Instantly sets sanity to 0, activating William's Nightmare Form.
+
+Bottle of Happiness:
+Craftable under Magic. Requires Alchemy Engine.
+Regains a large amount of sanity.
+
+
+Elemental Mixererer is required for the De-life-inator (gun) and the Heart of Phlogiston (sword) It can be found in Refine!
+
+
+Guns:
+
+The flintlock mechanism can be found in refine.
+
+Flintlock pistol
+requires flintlock mechanism.
+High damage.
+Long range
+10 uses
+
+De-life-inator
+Requires Elemental mixererer
+Summons a stationary Terror Claw to fight the target if in-range
+50 uses
+Med range
+Med damage
+
+FIRE SET:
+
+Heart of Phlogiston:
+Requires Elemental Mixererer
+Slow attack speed
+ignites targets
+Deals 72 damage and 77 to burnable targets
+
+HotHead's Braincase:
+High protection
+Has a chance to ignite attackers
+
+Pyromaniac's Evening Wear:
+High protection
+Wearer is almost immune to fire
+Glowy
+Very, very, very high insulation
+
+BRINGY-BACKY-2-LIFE SYSTEM
+
+Works like the meat effigy, but takes less health from William. The normal meat effigy will leave William at half health when built, this will leave him with much more.
+
+When resurrected, player starts off with less sanity and hunger than the Meat effigy.
+
+
+Not compatible with Wilhelm. I could fix this, but it would create more problems.
+
+His speech is currently a slightly modified Wickerbottom speech. This will be changed further in time.
