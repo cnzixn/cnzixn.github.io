@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta charset="utf-8">
+<title>CODE大全教你优化Markdown</title>
+<link rel="stylesheet" href="github-markdown.css">
+<style>
+    .markdown-body {
+        box-sizing: border-box;
+        min-width: 200px;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 45px;
+    }
+</style>
+<script src="http://cdn.bootcss.com/showdown/1.4.3/showdown.min.js" 
+type="text/javascript"></script>
+</head>
+<body>
+<div>
+<!-- 简单的markdown编辑器 -->
+<div class="markdown-body">
+<textarea id="content" style="height:400px;width:800px;" onkeyup="compile()">
+</textarea>
+</div>
+<!-- Markdown写作后，显示的文章内容 -->
+<article class="markdown-body" id="markdown-test">
+</article>
+</div>
+<script type="text/javascript">
+function compile(){
+    var text = document.getElementById("content").value;
+	var converter = new showdown.Converter(),
+    html      = converter.makeHtml(text);
+    document.getElementById("markdown-test").innerHTML = html;
+}
+</script>
+</body>
+</html>
