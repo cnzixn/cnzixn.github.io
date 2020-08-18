@@ -3,88 +3,36 @@
 <head>
 <!--  <title>404.html</title> -->
 <title>404</title>
-
+<meta name="viewport" content="width=device-width, minimal-ui">
 <meta http-equiv="keywords" content="404页面">
 <meta http-equiv="description" content="自定义404页面">
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="css/typo.css" type="text/css">
-<style type="text/css">
-a,fieldset,img {
-	border: 0;
-}
+		<style type="text/css">
+code{ color:#1abc9c; }
+		html{ background:#eee; }
+		body{ width:90%; max-width: 960px; background:#fff; margin:3em auto 0; padding-top:2em;border:1px solid #ddd;border-width:0 1px;}
+		pre{white-space:pre-wrap;}
 
-a {
-	color: #221919;
-	text-decoration: none;
-	outline: none;
-	opacity: 1;
-	display: block;
-}
+		i.serif{ text-transform:lowercase; color:#1abc9c; }
+		:-moz-any(h1, h2, h3, h4, h5, h5) i.serif{ text-transform: capitalize; }
+		i.serif:hover{ color:inherit; }
 
-a.link {
-	text-shadow: 0px 1px 2px white;
-	font-weight: 600;
-	color: #3366cc;
-	opacity: 1;
-}
+		#wrapper{ padding:5% 10%; position:relative;}
+		#tagline{ color:#999; font-size:1em; margin:-2em 0 2em; padding-bottom:2em; border-bottom:3px double #eee; }
+		#fork{ position:fixed; top:0; right:0; _position:absolute; }
+		#table{ margin-bottom:2em; color:#888; }
+		#github{ position:absolute;top:1em;}
+		#github iframe{ display:inline;margin-right:1em; }
 
-a:hover {
-	color: #3366cc;
-	text-decoration: underline;
-}
-
-body {
-	font-size: 24px;
-	color: #B7AEB4;
-}
-
-body a.link,body h1,body p {
-	-webkit-transition: opacity 0.5s ease-in-out;
-	-moz-transition: opacity 0.5s ease-in-out;
-	transition: opacity 0.5s ease-in-out;
-}
-
-#wrapper {
-	text-align: center;
-	margin: 100px auto;
-	width: 594px;
-}
-
-h1 {
-	text-shadow: 0px 1px 2px white;
-	font-size: 24px;
-	opacity: 0;
-}
-
-img {
-	-webkit-transition: opacity 1s ease-in-out;
-	-moz-transition: opacity 1s ease-in-out;
-	transition: opacity 1s ease-in-out;
-	height: 202px;
-	width: 199px;
-	opacity: 0;
-}
-
-p {
-	text-shadow: 0px 1px 2px white;
-	font-weight: normal;
-	font-weight: 200;
-	opacity: 0;
-}
-
-.fade {
-	opacity: 1;
-}
-
-@media only screen and (min-device-width:320px) and
-	(max-device-width:480px) {
-	#wrapper {
-		margin: 40px auto;
-		text-align: center;
-		width: 280px;
-	}
-}
-</style>
+		@media only screen and (max-width: 640px) {
+		table{ word-break:break-all;word-wrap:break-word;font-size:12px; }
+		.typo table th, .typo table td, .typo-table th, .typo-table td .typo table caption {
+		padding: 0.5em;
+		}
+		#fork{ display:none; }
+		}
+		</style>
 </head>
 <body>
 	<div id="wrapper" class="typo typo-selection">
