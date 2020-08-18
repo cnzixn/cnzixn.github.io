@@ -34,7 +34,7 @@ MT文件管理器 [下载][APK291]
 ###游戏
 
 安装包ShipWrecked(1.23) [下载][APK123]
-数据包ShipWrecked(1.23) [下载][APK123]
+数据包ShipWrecked(1.23) [下载][OBB123]
 
 安装包ShipWrecked(1.27) [下载][APK127]
 数据包ShipWrecked(1.27) [下载][OBB127]
