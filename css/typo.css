@@ -1,3 +1,8 @@
+/*
+Typo.css
+https://typo.sofi.sh
+*/
+
 @charset "utf-8";
 
 /* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
@@ -344,3 +349,32 @@ h1, h2, h3, h4, h5, h6 {
 .typo img {
   max-width: 100%;
 }
+
+
+
+
+/* git.12399.xyz */
+
+html { background:#eee; }
+
+body { color: #FF33CC; width:90%; max-width: 960px; background:#fff; margin:1em auto 1em; border:1px solid #ddd;border-width:0 1px;}
+
+h1, h6 {
+  text-align: center;
+}
+
+h6 {
+  color: #FF33CC;
+}
+
+a {
+  color: #33CCFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #33CCFF;
+  text-decoration: none;
+}
+
+#wrapper { padding:5% 10%; position:relative;}
