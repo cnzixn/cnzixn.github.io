@@ -23,9 +23,12 @@
 	var timestamp=new Date();
 	var day=timestamp.Format("yyyy-MM-dd");
 	var time=timestamp.Format("HH:mm:ss");
+	/*
 	window.onload = function(){
 		location.href="main.html?day="+day+"&time="+time;
 	}
+	*/
+	window.location.replace("main.html?day="+day+"&time="+time);
 </script>
 </head>
 <body>
