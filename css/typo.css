@@ -358,14 +358,18 @@ h1, h2, h3, h4, h5, h6 {
 
 html { background:#eee; }
 
-body { color: #FF33CC; width:90%; max-width: 960px; background:#fff; margin:1em auto 1em; border:1px solid #ddd;border-width:0 1px;}
+body { color: #ccc; width:90%; max-width: 960px; background:#000; margin:1em auto 1em; border:1px solid #ddd;border-width:0 1px;}
 
 h1, h6 {
   text-align: center;
 }
 
+h1, h3 {
+  color: #fff;
+}
+
 h6 {
-  color: #FF33CC;
+  color: #ccc;
 }
 
 .typo a {
