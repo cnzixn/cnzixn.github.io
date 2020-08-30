@@ -351,30 +351,37 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 100%;
 }
 
+/*
+Typo.css
+https://typo.sofi.sh
+*/
 
 
 
-/* git.12399.xyz */
+/*
+自定义CSS
+git.12399.xyz
+*/
 
-html { background:#eee; }
+html { background:#999; }
 
-body { color: #ccc; width:90%; max-width: 960px; background:#000; margin:1em auto 1em; border:1px solid #ddd;border-width:0 1px;}
+body { color: #CCC; max-width: 960px; background:#336666; margin: .5em;}
 
 h1, h6 {
   text-align: center;
 }
 
 h1, h3 {
-  color: #fff;
+  color: #FFF;
 }
 
 h6 {
-  color: #ccc;
+  color: #CCC;
 }
 
 .typo a {
-  color: #33CCFF;
-  border-bottom: 0 solid #1abc9c;
+  color: #3399FF;
+  border-bottom: 0;
 }
 
-#wrapper { padding:5% 10%; position:relative;}
+#wrapper { padding: 5% 8%; position: relative;}
