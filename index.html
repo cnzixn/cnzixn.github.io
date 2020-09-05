@@ -22,10 +22,7 @@
 	var timestamp=new Date();
 	var day=timestamp.Format("yyyy-MM-dd");
 	var time=timestamp.Format("HH:mm:ss");
-	var targetProtocol = "https:";
-	if (window.location.protocol != targetProtocol)
-		var urlreplace= targetProtocol + window.location.href.substring(window.location.protocol.length);
-	window.location.replace(urlreplace+"?day="+day+"&time="+time);
+	window.location.replace("main.html?day="+day+"&time="+time);
 </script>
 </head>
 <body>
