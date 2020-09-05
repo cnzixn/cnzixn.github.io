@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"/>
 <title>git.12399.xyz</title>
 <script type="text/javascript">
 	Date.prototype.Format = function (fmt) {
     var o = {
         "M+": this.getMonth() + 1, //月
         "d+": this.getDate(), //日 
-        
         "H+": this.getHours(), //时
         "m+": this.getMinutes(), //分
         "s+": this.getSeconds(), //秒
@@ -23,16 +22,12 @@
 	var timestamp=new Date();
 	var day=timestamp.Format("yyyy-MM-dd");
 	var time=timestamp.Format("HH:mm:ss");
-	/*
-	window.onload = function(){
-		location.href="main.html?day="+day+"&time="+time;
-		location.protocol="https:"
-	}
-	*/
-	window.location.replace("main.html?day="+day+"&time="+time);
+	var targetProtocol = "https:";
+	if (window.location.protocol != targetProtocol)
+		var urlreplace= targetProtocol + window.location.href.substring(window.location.protocol.length);
+	window.location.replace(urlreplace+"?day="+day+"&time="+time);
 </script>
 </head>
 <body>
-	
 </body>
 </html>
