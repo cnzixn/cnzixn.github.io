@@ -365,14 +365,12 @@ git.12399.xyz
 
 html { background:#999; }
 
-body { color: #CCC; max-width: 960px; background:#336666; margin: .5em; }
+body { color: #CCC; max-width: 960px; background:#336666; margin: 5px; padding: 8px 25px; border-radius: 16px; }
 
 h1, h3 , h5 { color: #FFF; }
 
 h2, h4, h6 { color: #CCC; }
 
 .typo a { color: #3399FF; border-bottom: 0; }
-
-#wrapper { padding: 5% 8%; position: relative; }
 
 .center { text-align: center; }
