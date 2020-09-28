@@ -371,7 +371,11 @@ h1, h3 , h5 { color: #FFF; }
 
 h2, h4, h6 { color: #CCC; }
 
+.typo em { color: #CCC; }
+
 .typo a { color: #3399FF; border-bottom: 0; }
+
+.typo li { list-style-type: none; margin: 0 0 0 -20px; }
 
 .center { text-align: center; }
 
