@@ -414,7 +414,7 @@ MT文件管理器　[[下载]][APK291]
 
 #### 赞助
 
-##### ![pay image](./images/pay.png)
+##### ![pay image](https://git.12399.xyz/images/pay.png)
 
 ##### 长按保存→扫码→相册选取
 

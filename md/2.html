@@ -30,7 +30,7 @@
            var t = new Date();
             $.ajax({   
                type: "get",   
-               url:  "https://git.12399.xyz/"+getKey("file")+".md", 
+               url:  "https://git.12399.xyz/md/"+getKey('file')+".md", 
                datatype: "text",//"json", "xml", "html", "script", "html", "jsonp", "text".
                success: function (data,status) {
             var converter = new showdown.Converter(); //初始化转换器
