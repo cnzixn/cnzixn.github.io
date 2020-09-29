@@ -366,7 +366,7 @@ git.12399.xyz
 
 html { background:#999; }
 
-body { color: #CCC; max-width: 960px; background:#336666; margin: 5px; padding: 8px 25px; border-radius: 16px; }
+body { color: #CCC; max-width: 960px; background:#336666; margin: 5px; padding: 8px 25px; border-radius: 16px; word-wrap:break-word; word-break:break-all;}
 
 h1, h3 , h5 { color: #CCC; text-align: center; }
 
