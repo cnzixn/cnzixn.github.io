@@ -421,8 +421,8 @@ MT文件管理器　[[下载]][APK291]
 
 
 
-[WWW1]: https://git.12399.xyz/markdown/get.html?file=logs.md
-[WWW2]: https://git.12399.xyz/markdown/get.html?file=0000.md
+[WWW1]: https://git.12399.xyz/markdown/get.html?url=logs.md
+[WWW2]: https://git.12399.xyz/markdown/get.html?url=0000.md
 [WWW3]: https://git.12399.xyz/mods.html
 
 
