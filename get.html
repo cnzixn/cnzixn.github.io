@@ -1,0 +1,29 @@
+<html lang="zh">
+	<head>
+		<meta name="viewport" content="width=device-width, minimal-ui">
+		<title>
+			temp.12399.xyz
+		</title>
+		<link rel="stylesheet" href="css/typo200928.css" type="text/css">
+		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="typo">
+			<div id="dsh">
+            
+        </div>
+        <script type="text/javascript">
+            $.ajax({   
+               type: "get",   
+               url:  "https://5.5w.pw/api?mid=1697986974", 
+               datatype: "json",//"xml", "html", "script", "html", "jsonp", "text".
+               success: function (data,status) {
+                   var js=JSON.stringify(data);//转换成json字符串
+                   document.getElementById("dsh").innerHTML=js; //data.teacher[1].age
+               },
+               error:   function (data,status) { alert("Ajax请求Json错误");}   
+             });  
+        </script>
+		</div>
+	</body>
+</html>
