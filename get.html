@@ -16,22 +16,19 @@
             
         </div>
         <script type="text/javascript">
+           var timestamp=new Date();
             $.ajax({   
                type: "get",   
-               url:  "https://git.12399.xyz/main.md", 
+               url:  "https://git.12399.xyz/main.md?timestamp="+timestamp, 
                datatype: "text",//"json", "xml", "html", "script", "html", "jsonp", "text".
                success: function (data,status) {
-                   //var js=JSON.stringify(data);//转换成json字符串
-                   //document.getElementById("content").innerHTML=js; //data.teacher[1].age
-                   //document.getElementById('content').innerHTML = marked(data);
-                   
-                   
             var converter = new showdown.Converter(); //初始化转换器
             var htmlcontent = converter.makeHtml(data); //将MarkDown转为html格式的内容
             $("#content").html(htmlcontent);
                },
-               error:   function (data,status) { alert("Ajax请求Json错误");}   
-             });  
+               error:   function (data,status) { alert("请求错误...");}   
+             });
+             
         </script>
 		</div>
 	</body>
