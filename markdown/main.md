@@ -14,11 +14,7 @@
 
 #### 教程
 
-1.“游戏”的安装包(APK)、数据包(OBB)为ZIP文件。  
-2.进入ADD-TO-APK，将全部的文件“添加”到安装包。  
-3.进入ADD-TO-OBB，将全部的文件“添加”到数据包。  
-4.安装包被修改后，需要“签名”才可以被正常安装。  
-5.数据包路径中的2个“com”，都需要修改为“hei”。  
+[[下载文件]][MP401]→[[安装游戏]][MP402]→[[安装补丁/模组]][MP403]
 
 ------
 
@@ -420,18 +416,23 @@ MT文件管理器　[[下载]][APK291]
 
 ------
 
-##### [[更新日志]][WWW1]　[[BM0000]][WWW2]　[[STEAM MODS]][WWW3]
+[[更新日志]][WWW1]　[[BM0000]][WWW2]　[[STEAM MODS]][WWW3]
 
 ------
 
-[链接]: 这是个什么鬼东西
+[注释]: 以下是全部链接
 
 
 
-[WWW1]: https://git.12399.xyz/logs_md.html
-[WWW2]: https://git.12399.xyz/0000_md.html
+[WWW1]: https://git.12399.xyz/markdown/get.html?file=logs
+[WWW2]: https://git.12399.xyz/markdown/get.html?file=0000
 [WWW3]: https://git.12399.xyz/mods.html
 
+
+
+[MP401]: https://git.12399.xyz//videos/jiaocheng01.mp4
+[MP402]: https://git.12399.xyz//videos/jiaocheng02.mp4
+[MP403]: https://git.12399.xyz//videos/jiaocheng03.mp4
 
 
 [QQG777]: mqqopensdkapi://bizAgent/qm/qr?url=http://qm.qq.com/cgi-bin/qm/qr%3Ffrom=app%26p=android%26k=MNbFabUJEtYKRckugDrWITaD_hvJk1uT
