@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<title>
+			git.12399.xyz
+		</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, minimal-ui">
+		<link rel="stylesheet" href="https://git.12399.xyz/css/typo200928.css" type="text/css"><style>#i{width:80%;height:30px}</style><script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script><script>function GetUrlParam(t,e){var r=t.split("?");if(1<r.length){for(var n,i=r[1].split("&"),u=0;u<i.length;u++)if(null!=(n=i[u].split("="))&&n[0]==e)return n[1];return""}return""}function sb(){$("#content").html('<p class="center"><br /><br />正在努力查询...<br /><br /></p>');var t=1697986974,e=document.getElementById("i").value,t=e&&e||t;-1!=e.toLowerCase().indexOf("steamcommunity.com")&&(t=GetUrlParam(e,"id")),$.getJSON("https://5.5w.pw/api?mid="+t,function(tt){if(tt.code=="200"){$("#content").html("<p><br />编号："+tt.mid+"<br />名称："+tt.title.substring(0,20)+'...<br />链接：<a href="'+tt.url+'">'+tt.url.substring(0,32)+"...</a><br /></p>")}else{$("#content").html('<p class="center"><br /><br />未找到相关模组!<br /><br /></p>')}})}function keyDetection(t){13==t.keyCode&&sb()}document.getElementById("i").setAttribute("onKeyDown","keyDetection(event)")</script>
+	</head>
+	<body>
+		<div class="typo">
+			<div><h1 class="center">STEAM MODS DOWNLOAD</h1><br><input class="circle" type="text" id="i" placeholder="请输入ID或链接(默认:1697986974)..."> <button class="circle" onclick="sb()">搜索</button><div id="content"></div>
+		</div>
+	</body>
+</html>
