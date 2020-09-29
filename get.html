@@ -5,8 +5,9 @@
 			temp.12399.xyz
 		</title>
 		<link rel="stylesheet" href="css/typo200928.css" type="text/css">
-		<link rel="stylesheet" href="https://cdn.bootcss.com/github-markdown-css/3.0.1/github-markdown.css" type="text/css">
+		<!--link rel="stylesheet" href="https://cdn.bootcss.com/github-markdown-css/3.0.1/github-markdown.css" type="text/css"-->
 		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/showdown/1.3.0/showdown.min.js"></script>
 		<script type="text/javascript" src='https://cdn.jsdelivr.net/npm/marked/marked.min.js'></script>
 	</head>
 	<body>
@@ -22,7 +23,12 @@
                success: function (data,status) {
                    //var js=JSON.stringify(data);//转换成json字符串
                    //document.getElementById("content").innerHTML=js; //data.teacher[1].age
-                   document.getElementById('content').innerHTML = marked(data);
+                   //document.getElementById('content').innerHTML = marked(data);
+                   
+                   
+            var converter = new showdown.Converter(); //初始化转换器
+            var htmlcontent = converter.makeHtml(data); //将MarkDown转为html格式的内容
+            $("#content").html(htmlcontent);
                },
                error:   function (data,status) { alert("Ajax请求Json错误");}   
              });  
