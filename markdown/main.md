@@ -412,7 +412,7 @@ MT文件管理器　[[下载]][APK291]
 
 ------
 
-[[更新日志]][WWW1]　[[BM0000]][WWW2]　[[STEAM MODS]][WWW3]
+###### [[更新日志]][WWW1]　[[BM0000]][WWW2]　[[常见问题]][WWW3]　[[STEAM MODS]][WWW4]
 
 ------
 
@@ -420,9 +420,10 @@ MT文件管理器　[[下载]][APK291]
 
 
 
-[WWW1]: https://git.12399.xyz/markdown/get.html?url=logs.md
-[WWW2]: https://git.12399.xyz/markdown/get.html?url=0000.md
-[WWW3]: https://git.12399.xyz/mods.html
+[WWW1]: https://git.12399.xyz/markdown/get.html?url=logs
+[WWW2]: https://git.12399.xyz/markdown/get.html?url=0000
+[WWW3]: https://git.12399.xyz/markdown/get.html?url=help
+[WWW4]: https://git.12399.xyz/mods.html
 
 
 
