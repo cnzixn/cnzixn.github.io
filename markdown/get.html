@@ -15,8 +15,10 @@
 			}
 			return r || !1
 		}
-		var url = -1 != (url = getKey("url", "main.md")).indexOf("http") && url || "https://git.12399.xyz/markdown/" + url,
-			t = new Date;
+		var time = new Date;
+		var url = -1 != (url = getKey("url", "main.md")).indexOf("http") && url || "https://git.12399.xyz/markdown/" + url;
+		url = -1 != (url.indexOf(".md") && url || url + ".md";
+		url = url  + "?time=" + time;
 		$.ajax({
 			type: "get",
 			url: url,
