@@ -37,6 +37,10 @@ MT文件管理器　[[下载]][APK291]
 
 191001.兔人补丁(1.23)　[[下载]][GIT191001]  
 200701.兔人补丁(1.27)　[[下载]][GIT200701]  
+  
+110000.字体补丁　[[下载]][GIT110000]  
+110001.字体补丁　[[下载]][GIT110001]  
+110002.字体补丁　[[下载]][GIT110002]  
 
 ------
 
@@ -811,7 +815,9 @@ MT文件管理器　[[下载]][APK291]
 [OBB123]: https://sj.71acg.com/hykb/shujubao/main.38.com.kleientertainment.doNotStarveShipwrecked.obb
 
 
-
+[GIT110000]: https://shrill-pond-3e81.hunsh.workers.dev/?q=https://github.com/cnzixn/bmsh-patch/archive/GIT110000.zip
+[GIT110001]: https://shrill-pond-3e81.hunsh.workers.dev/?q=https://github.com/cnzixn/bmsh-patch/archive/GIT110001.zip
+[GIT110002]: https://shrill-pond-3e81.hunsh.workers.dev/?q=https://github.com/cnzixn/bmsh-patch/archive/GIT110002.zip
 [GIT191001]: https://shrill-pond-3e81.hunsh.workers.dev/?q=https://github.com/cnzixn/bmsh-patch/archive/GIT191001.zip
 [GIT200701]: https://shrill-pond-3e81.hunsh.workers.dev/?q=https://github.com/cnzixn/bmsh-patch/archive/GIT200701.zip
 [GIT999999]: https://shrill-pond-3e81.hunsh.workers.dev/?q=https://github.com/cnzixn/bmsh-patch/archive/GIT999999.zip
