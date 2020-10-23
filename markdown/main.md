@@ -24,7 +24,7 @@
 
 ##### ![app image](https://git.12399.xyz/images/app.png)  
 
-##### [[下载文件]][MP401]→[[安装游戏]][MP402]→[[安装补丁]][MP403]  
+##### [[BiliBili　《饥荒》手机模组安装教程]][TV004]  
 
 ------
 
@@ -439,10 +439,10 @@ MT文件管理器　[[下载]][APK291]
 
 
 
-[MP401]: https://git.12399.xyz//videos/jiaocheng01.mp4
-[MP402]: https://git.12399.xyz//videos/jiaocheng02.mp4
-[MP403]: https://git.12399.xyz//videos/jiaocheng03.mp4
-
+[TV001]: https://git.12399.xyz//videos/jiaocheng01.mp4
+[TV002]: https://git.12399.xyz//videos/jiaocheng02.mp4
+[TV003]: https://git.12399.xyz//videos/jiaocheng03.mp4
+[TV004]: https://b23.tv/AeaOpL
 
 [QQG777]: mqqopensdkapi://bizAgent/qm/qr?url=http://qm.qq.com/cgi-bin/qm/qr%3Ffrom=app%26p=android%26k=MNbFabUJEtYKRckugDrWITaD_hvJk1uT
 [QQG614]: mqqopensdkapi://bizAgent/qm/qr?url=http://qm.qq.com/cgi-bin/qm/qr%3Ffrom=app%26p=android%26k=KnkVjjF7OiwDcpO3WG6vXXTVn2bicq0J
