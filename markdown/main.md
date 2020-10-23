@@ -22,9 +22,9 @@
 
 #### 教程  
 
-[[下载文件]][MP401]→[[安装游戏]][MP402]→[[安装补丁/模组]][MP403]  
+##### ![app image](https://git.12399.xyz/images/app.png)  
 
-##### ![app image](https://git.12399.xyz/images/app.png)
+##### [[下载文件]][MP401]→[[安装游戏]][MP402]→[[安装补丁/模组]][MP403]  
 
 ------
 
