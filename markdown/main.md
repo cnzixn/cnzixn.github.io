@@ -22,9 +22,9 @@
 
 #### 教程  
 
-##### ![app image](https://git.12399.xyz/images/app.png)  
+##### [![app image](https://git.12399.xyz/images/app.png)][TV004]  
 
-##### [[《饥荒》手机模组安装教程.Bili]][TV004]  
+##### [[模组安装教程]][TV004]  
 
 ------
 
