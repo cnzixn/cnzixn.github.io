@@ -24,7 +24,7 @@
 #    移除模组                 rm_to_obb ...
 #==================================================#
 
-VER_BM=3.2
+VER_BM=3.3
 
 VER_KEY=200701
 VER_JKS=200701
@@ -34,29 +34,23 @@ VER_OPH=200701
 
 GIT_OPH=200701
 
-URL_KEY=https://git.12399.xyz/files/appkey/hei.kleientertainment.doNotStarveShipwrecked.key
-URL_JKS=https://git.12399.xyz/files/appkey/hei.kleientertainment.doNotStarveShipwrecked.jks
-URL_APP=https://sj.71acg.com/hykb/201911/20191126jhht1.27.apk
-URL_OBB=https://sj.71acg.com/hykb/shujubao/main.50.com.kleientertainment.doNotStarveShipwrecked.obb
-URL_OPH=https://shrill-pond-3e81.hunsh.workers.dev/?q=https://github.com/cnzixn/bmsh-patch/archive/GIT$GIT_OPH.zip
-
 SIZE_KEY=1000
 SIZE_JKS=1000
 SIZE_APP=6880098
 SIZE_OBB=521631690
 SIZE_OPH=6000000
 
-
+URL_KEY=https://git.12399.xyz/files/appkey/hei.kleientertainment.doNotStarveShipwrecked.key
+URL_JKS=https://git.12399.xyz/files/appkey/hei.kleientertainment.doNotStarveShipwrecked.jks
+URL_APP=https://sj.71acg.com/hykb/201911/20191126jhht1.27.apk
+URL_OBB=https://sj.71acg.com/hykb/shujubao/main.50.com.kleientertainment.doNotStarveShipwrecked.obb
+URL_OPH=https://shrill-pond-3e81.hunsh.workers.dev/?q=https://github.com/cnzixn/bmsh-patch/archive/GIT$GIT_OPH.zip
 
 APP_SIGN=hei.kleientertainment.doNotStarveShipwrecked
-
 
 KLEI_OBB=main.50.com.kleientertainment.doNotStarveShipwrecked
 
 PATH_OBB="/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb"
-
-
-
 
 #上次使用时间
 FILE_LASTTIME="/data/data/com.termux/files/home/.bmhei_lasttime"
