@@ -511,7 +511,7 @@ function get_mod_list() {
 	if [ -f "$PATH_OBB" ]; then
 		str=$(7z l "$PATH_OBB" "mods/BM????/" | grep -Eo "BM[0-9]+" | tr ' ' '\n' | uniq | sort -n )
 	fi
-	bmsay "$ECHO_OBB""已安装模组列表：\n"
+	bmsay "$ECHO_OBB""已安装模组：\n"
 	echo $str | xargs -n5
 }
 
