@@ -51,6 +51,7 @@ APP_SIGN=hei.kleientertainment.doNotStarveShipwrecked
 KLEI_OBB=main.50.com.kleientertainment.doNotStarveShipwrecked
 
 PATH_OBB="/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb"
+ECHO_OBB=""
 
 #上次使用时间
 FILE_LASTTIME="/data/data/com.termux/files/home/.bmhei_lasttime"
@@ -251,8 +252,10 @@ function pause() {
 function path_obb(){
 	if [ ! -d "${PATH_OBB%/*}" ]; then
 	PATH_OBB="/sdcard/Android/obb/bai.kleientertainment.doNotStarveShipwrecked/main.50.bai.kleientertainment.doNotStarveShipwrecked.obb"
+	ECHO_OBB="“小白”"
 		if [ ! -d "${PATH_OBB%/*}" ]; then
 			PATH_OBB="/sdcard/Android/obb/hei.kleientertainment.doNotStarveShipwrecked/main.50.hei.kleientertainment.doNotStarveShipwrecked.obb"
+			ECHO_OBB="“小黑”"
 		fi
 	fi
 }
@@ -508,7 +511,7 @@ function get_mod_list() {
 	if [ -f "$PATH_OBB" ]; then
 		str=$(7z l "$PATH_OBB" "mods/BM????/" | grep -Eo "BM[0-9]+" | tr ' ' '\n' | uniq | sort -n )
 	fi
-	bmsay "已安装模组列表：\n"
+	bmsay "$ECHO_OBB""已安装模组列表：\n"
 	echo $str | xargs -n5
 }
 
