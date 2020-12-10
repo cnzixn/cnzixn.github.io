@@ -38,7 +38,7 @@ SIZE_KEY=1000
 SIZE_JKS=1000
 SIZE_APP=6880098
 SIZE_OBB=521631690
-SIZE_OPH=6000000
+SIZE_OPH=7654321
 
 URL_KEY=https://git.12399.xyz/files/appkey/hei.kleientertainment.doNotStarveShipwrecked.key
 URL_JKS=https://git.12399.xyz/files/appkey/hei.kleientertainment.doNotStarveShipwrecked.jks
@@ -364,6 +364,7 @@ fi
 function bmsh_sw_key_exist() {
 	bmsh_sw_key=BMSH"$VER_KEY".KEY
 	size=$(get_file_size "$bmsh_sw_key")
+	mkdir -p /sdcard/MT2/keys/
 	if test "$size" -gt "$SIZE_KEY"; then
 		#已存在
 		bmsay "获取"$bmsh_sw_key"成功.\n" 32m
@@ -391,6 +392,7 @@ function bmsh_sw_key_exist() {
 function bmsh_sw_jks_exist() {
 	bmsh_sw_jks=BMSH"$VER_JKS".JKS
 	size=$(get_file_size "$bmsh_sw_jks")
+	mkdir -p /sdcard/MT2/keys/
 	if test "$size" -gt "$SIZE_JKS"; then
 		#已存在
 		bmsay "获取"$bmsh_sw_jks"成功.\n" 32m
