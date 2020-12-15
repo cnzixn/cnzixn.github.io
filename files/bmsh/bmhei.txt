@@ -24,7 +24,7 @@
 #    移除模组                 rm_to_obb ...
 #==================================================#
 
-VER_BM=3.4
+VER_BM=3.3
 
 VER_KEY=200701
 VER_JKS=200701
@@ -313,7 +313,7 @@ difftime=$(expr $currenttime - $lasttime)
 	if test "$difftime" -gt 5 ; then
 		echo "获取最新文件bmhei.txt"
 		cd /data/data/com.termux/files/home
-		wget -O ".bmhei.txt" "https://raw.staticdn.net/cnzixn/cnzixn.github.io/master/files/bmsh/bmhei.txt"
+		wget -O ".bmhei.txt" "https://git.12399.xyz/files/bmsh/bmhei.txt"
 		if test "$?" -ne "0"; then
 			printf "获取最新文件bmhei.txt失败."
 			exit 99
