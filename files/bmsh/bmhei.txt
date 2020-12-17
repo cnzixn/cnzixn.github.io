@@ -44,7 +44,7 @@ URL_KEY=https://git.12399.xyz/files/appkey/hei.kleientertainment.doNotStarveShip
 URL_JKS=https://git.12399.xyz/files/appkey/hei.kleientertainment.doNotStarveShipwrecked.jks
 URL_APP=https://sj.71acg.com/hykb/201911/20191126jhht1.27.apk
 URL_OBB=https://sj.71acg.com/hykb/shujubao/main.50.com.kleientertainment.doNotStarveShipwrecked.obb
-URL_OPH=https://hub.fastgit.org/https://github.com/cnzixn/bmsh-patch/archive/GIT$GIT_OPH.zip
+URL_OPH=https://hub.fastgit.org/cnzixn/bmsh-patch/archive/GIT$GIT_OPH.zip
 
 APP_SIGN=hei.kleientertainment.doNotStarveShipwrecked
 
