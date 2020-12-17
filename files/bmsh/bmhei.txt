@@ -286,7 +286,7 @@ function get_file_github() {
 			GNAME="bmsh-patch"
 		fi
 		URL=https://github.com/cnzixn/"$GNAME"/archive/"$BNAME".zip
-		CN_URL=https://hub.fastgit.org/"$URL"
+		CN_URL=https://hub.fastgit.org/cnzixn/"$GNAME"/archive/"$BNAME".zip
 		url="$URL"
 		if test "$WHERE_ARE_YOU" == "CHINA"; then
 			url="$CN_URL"
