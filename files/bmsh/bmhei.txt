@@ -7,7 +7,7 @@
 #
 #    pkg i lua wget p7zip apksigner -y
 #
-#    main.50.com.kleientertainment.doNotStarveShipwrecked.obb
+#    main.$KLEI_VER_OBB.com.kleientertainment.doNotStarveShipwrecked.obb
 #
 #==================================================#
 #    主程序                   main
@@ -24,15 +24,12 @@
 #    移除模组                 rm_to_obb ...
 #==================================================#
 
-VER_BM=3.5
-
-VER_KEY=210101
-VER_JKS=210101
-VER_APP=210101
-VER_OBB=210101
-VER_OPH=210101
-
-GIT_OPH=100128
+BM_VER_HEI=3.5
+BM_VER_KEY=210101
+BM_VER_JKS=210101
+BM_VER_APP=210101
+BM_VER_OBB=210101
+BM_VER_OPH=210101
 
 SIZE_KEY=1000
 SIZE_JKS=1000
@@ -40,6 +37,7 @@ SIZE_APP=6880098
 SIZE_OBB=521631690
 SIZE_OPH=7654321
 
+GIT_OPH=100128
 URL_KEY=https://git.12399.xyz/files/appkey/hei.kleientertainment.doNotStarveShipwrecked.key
 URL_JKS=https://git.12399.xyz/files/appkey/hei.kleientertainment.doNotStarveShipwrecked.jks
 URL_APP=http://sj.71acg.com/hykb/202101/20210105dontstarveship.apk
@@ -48,9 +46,10 @@ URL_OPH=https://hub.fastgit.org/cnzixn/bmsh-patch/archive/GIT$GIT_OPH.zip
 
 APP_SIGN=hei.kleientertainment.doNotStarveShipwrecked
 
-KLEI_OBB=main.50.com.kleientertainment.doNotStarveShipwrecked
+KLEI_VER_OBB=51
+KLEI_OBB=main.$KLEI_VER_OBB.com.kleientertainment.doNotStarveShipwrecked
 
-PATH_OBB="/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.50.bm.kleientertainment.doNotStarveShipwrecked.obb"
+PATH_OBB="/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.$KLEI_VER_OBB.bm.kleientertainment.doNotStarveShipwrecked.obb"
 ECHO_OBB=""
 
 #上次使用时间
@@ -83,7 +82,7 @@ function main() {
 
 	while true; do
 		clear
-		bmsay "你需要小黑[""$VER_BM""]帮忙么？\n" 33m 0
+		bmsay "你需要小黑[""$BM_VER_HEI""]帮忙么？\n" 33m 0
 		bmsay "  1.我是新手...\n" 33m 0
 		bmsay " *2.嗯，请你帮帮我...\n" 33m 0
 		bmsay "  3.对不起，我不想继续了。\n" 33m 0
@@ -93,7 +92,7 @@ function main() {
 		echo
 		case $input in
 		[1])
-			bmsay "小黑  [""$VER_BM""]  樂不思蜀\n" 33m 0
+			bmsay "小黑  [""$BM_VER_HEI""]  樂不思蜀\n" 33m 0
 			bmsay "  1.输入正确选项，我会帮你进行相应操作。\n" 34m 0
 			bmsay "  2.什么都不输入，我会帮你进行“ * ”操作。\n" 34m 0
 			bmsay "  3.输入错误选项，我会帮你进行“ * ”操作。\n" 34m 0
@@ -251,10 +250,10 @@ function pause() {
 
 function path_obb(){
 	if [ ! -d "${PATH_OBB%/*}" ]; then
-	PATH_OBB="/sdcard/Android/obb/bai.kleientertainment.doNotStarveShipwrecked/main.50.bai.kleientertainment.doNotStarveShipwrecked.obb"
+	PATH_OBB="/sdcard/Android/obb/bai.kleientertainment.doNotStarveShipwrecked/main.$KLEI_VER_OBB.bai.kleientertainment.doNotStarveShipwrecked.obb"
 	ECHO_OBB="“小白”"
 		if [ ! -d "${PATH_OBB%/*}" ]; then
-			PATH_OBB="/sdcard/Android/obb/hei.kleientertainment.doNotStarveShipwrecked/main.50.hei.kleientertainment.doNotStarveShipwrecked.obb"
+			PATH_OBB="/sdcard/Android/obb/hei.kleientertainment.doNotStarveShipwrecked/main.$KLEI_VER_OBB.hei.kleientertainment.doNotStarveShipwrecked.obb"
 			ECHO_OBB="“小黑”"
 		fi
 	fi
@@ -360,9 +359,9 @@ fi
 
 
 
-#检查BMSH$VER_KEY
+#检查BMSH$BM_VER_KEY
 function bmsh_sw_key_exist() {
-	bmsh_sw_key=BMSH"$VER_KEY".KEY
+	bmsh_sw_key=BMSH"$BM_VER_KEY".KEY
 	size=$(get_file_size "$bmsh_sw_key")
 	mkdir -p /sdcard/MT2/keys/
 	if test "$size" -gt "$SIZE_KEY"; then
@@ -390,7 +389,7 @@ function bmsh_sw_key_exist() {
 
 #检查JKS
 function bmsh_sw_jks_exist() {
-	bmsh_sw_jks=BMSH"$VER_JKS".JKS
+	bmsh_sw_jks=BMSH"$BM_VER_JKS".JKS
 	size=$(get_file_size "$bmsh_sw_jks")
 	mkdir -p /sdcard/MT2/keys/
 	if test "$size" -gt "$SIZE_JKS"; then
@@ -418,7 +417,7 @@ function bmsh_sw_jks_exist() {
 
 #检查APP
 function bmsh_sw_apk_exist() {
-	bmsh_sw_apk=BMSH"$VER_APP".APP
+	bmsh_sw_apk=BMSH"$BM_VER_APP".APP
 	size=$(get_file_size "$bmsh_sw_apk")
 	if test "$size" -eq "$SIZE_APP"; then
 		#已存在
@@ -441,9 +440,9 @@ function bmsh_sw_apk_exist() {
 	return 1
 }
 
-#检查BMSH"$VER_OBB".OBB
+#检查BMSH"$BM_VER_OBB".OBB
 function bmsh_sw_obb_exist() {
-	bmsh_sw_obb=BMSH"$VER_OBB".OBB
+	bmsh_sw_obb=BMSH"$BM_VER_OBB".OBB
 	size=$(get_file_size "$bmsh_sw_obb")
 	if test "$size" -eq "$SIZE_OBB"; then
 		#已存在
@@ -484,7 +483,7 @@ function bmsh_sw_obb_exist() {
 
 #检查OPH
 function bmsh_sw_oph_exist() {
-	bmsh_sw_oph=BMSH"$VER_OPH".OPH
+	bmsh_sw_oph=BMSH"$BM_VER_OPH".OPH
 	size=$(get_file_size "$bmsh_sw_oph")
 	if test "$size" -gt "$SIZE_OPH"; then
 		#"$bmsh_sw_oph"已存在
@@ -671,12 +670,12 @@ function add_to_apk() {
 
 	rm -rf assets patch
 
-	bmsay "解压BMSH"$VER_OBB".OBB...\n" 33m
-	7z x -tzip "BMSH"$VER_OBB".OBB" -oassets -aoa
+	bmsay "解压BMSH"$BM_VER_OBB".OBB...\n" 33m
+	7z x -tzip "BMSH"$BM_VER_OBB".OBB" -oassets -aoa
 	if test "$?" -eq "0"; then
-		bmsay "解压BMSH"$VER_OBB".OBB成功.\n" 32m
+		bmsay "解压BMSH"$BM_VER_OBB".OBB成功.\n" 32m
 	else
-		bmsay "解压BMSH"$VER_OBB".OBB失败.\n" 31m
+		bmsay "解压BMSH"$BM_VER_OBB".OBB失败.\n" 31m
 		pause
 		main
 	fi
@@ -715,7 +714,7 @@ function add_to_apk() {
 	fi
 
 	bmsay "生成APP签名验证文件...\n" 33m
-	apksigner -p "$APP_SIGN" "BMSH"$VER_JKS".JKS" "BMSH_SIGN.APK" "TEMP.APK"
+	apksigner -p "$APP_SIGN" "BMSH"$BM_VER_JKS".JKS" "BMSH_SIGN.APK" "TEMP.APK"
 	if test "$?" -eq "0"; then
 		bmsay "生成APP签名验证文件成功.\n" 32m
 	else
