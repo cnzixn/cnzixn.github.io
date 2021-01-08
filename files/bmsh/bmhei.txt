@@ -7,7 +7,7 @@
 #
 #    pkg i lua wget p7zip apksigner -y
 #
-#    main.$KLEI_VER_OBB.com.kleientertainment.doNotStarveShipwrecked.obb
+#    main.xx.com.kleientertainment.doNotStarveShipwrecked.obb
 #
 #==================================================#
 #    主程序                   main
@@ -24,7 +24,7 @@
 #    移除模组                 rm_to_obb ...
 #==================================================#
 
-BM_VER_HEI=3.5
+BM_VER_HEI=3.5.1
 BM_VER_KEY=210101
 BM_VER_JKS=210101
 BM_VER_APP=210101
@@ -46,10 +46,11 @@ URL_OPH=https://hub.fastgit.org/cnzixn/bmsh-patch/archive/GIT$GIT_OPH.zip
 
 APP_SIGN=hei.kleientertainment.doNotStarveShipwrecked
 
-KLEI_VER_OBB=51
-KLEI_OBB=main.$KLEI_VER_OBB.com.kleientertainment.doNotStarveShipwrecked
+KLEI_VER_HEI=51
+KLEI_VER_BAI=50
+KLEI_OBB=main.$KLEI_VER_HEI.com.kleientertainment.doNotStarveShipwrecked
 
-PATH_OBB="/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.$KLEI_VER_OBB.bm.kleientertainment.doNotStarveShipwrecked.obb"
+PATH_OBB="/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.$KLEI_VER_HEI.bm.kleientertainment.doNotStarveShipwrecked.obb"
 ECHO_OBB=""
 
 #上次使用时间
@@ -250,10 +251,10 @@ function pause() {
 
 function path_obb(){
 	if [ ! -d "${PATH_OBB%/*}" ]; then
-	PATH_OBB="/sdcard/Android/obb/bai.kleientertainment.doNotStarveShipwrecked/main.$KLEI_VER_OBB.bai.kleientertainment.doNotStarveShipwrecked.obb"
+	PATH_OBB="/sdcard/Android/obb/bai.kleientertainment.doNotStarveShipwrecked/main.$KLEI_VER_BAI.bai.kleientertainment.doNotStarveShipwrecked.obb"
 	ECHO_OBB="“小白”"
 		if [ ! -d "${PATH_OBB%/*}" ]; then
-			PATH_OBB="/sdcard/Android/obb/hei.kleientertainment.doNotStarveShipwrecked/main.$KLEI_VER_OBB.hei.kleientertainment.doNotStarveShipwrecked.obb"
+			PATH_OBB="/sdcard/Android/obb/hei.kleientertainment.doNotStarveShipwrecked/main.$KLEI_VER_HEI.hei.kleientertainment.doNotStarveShipwrecked.obb"
 			ECHO_OBB="“小黑”"
 		fi
 	fi
