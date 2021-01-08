@@ -37,13 +37,13 @@ MT管理器(2.9.4)　[[下载]][APK294]
 安装包ShipWrecked(1.23)　[[下载]][APK123]  
 数据包ShipWrecked(1.23)　[[下载]][OBB123]  
   
-安装包ShipWrecked(1.27)　[[下载]][APK127]  
-数据包ShipWrecked(1.27)　[[下载]][OBB127]  
+安装包ShipWrecked(1.28)　[[下载]][APK128]  
+数据包ShipWrecked(1.28)　[[下载]][OBB128]  
   
 ##### 框架  
 
 100123.兔人框架(1.23)　[[下载]][FST100123]  
-100127.兔人框架(1.27)　[[下载]][FST100127]  
+100128.兔人框架(1.28)　[[下载]][FST100128]  
 
 ##### 补丁  
 
@@ -460,6 +460,8 @@ MT管理器(2.9.4)　[[下载]][APK294]
 [APK294]: https://dl1.mt2.cn/MT2.9.4.apk
 
 
+[APK128]: http://sj.71acg.com/hykb/202101/20210105dontstarveship.apk
+[OBB128]: http://sj.71acg.com/hykb/202101/main.51.com.kleientertainment.doNotStarveShipwrecked.obb
 
 [APK127]: https://sj.71acg.com/hykb/201911/20191126jhht1.27.apk
 [OBB127]: https://sj.71acg.com/hykb/shujubao/main.50.com.kleientertainment.doNotStarveShipwrecked.obb
@@ -469,7 +471,8 @@ MT管理器(2.9.4)　[[下载]][APK294]
 
 
 [FST100123]: https://hub.fastgit.org/cnzixn/bmsh-patch/archive/GIT100123.zip
-[FST100127]: https://hub.fastgit.org/cnzixn/bmsh-patch/archive/GIT100127.zip
+[FST100128]: https://hub.fastgit.org/cnzixn/bmsh-patch/archive/GIT100128.zip
+
 [FST110000]: https://hub.fastgit.org/cnzixn/bmsh-patch/archive/GIT110000.zip
 [FST111000]: https://hub.fastgit.org/cnzixn/bmsh-patch/archive/GIT111000.zip
 [FST111001]: https://hub.fastgit.org/cnzixn/bmsh-patch/archive/GIT111001.zip

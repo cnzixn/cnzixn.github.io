@@ -24,7 +24,7 @@
 #    移除模组                 rm_to_obb ...
 #==================================================#
 
-VER_BM=3.4
+VER_BM=3.5
 
 VER_KEY=210101
 VER_JKS=210101
@@ -32,7 +32,7 @@ VER_APP=210101
 VER_OBB=210101
 VER_OPH=210101
 
-GIT_OPH=100127
+GIT_OPH=100128
 
 SIZE_KEY=1000
 SIZE_JKS=1000
@@ -42,8 +42,8 @@ SIZE_OPH=7654321
 
 URL_KEY=https://git.12399.xyz/files/appkey/hei.kleientertainment.doNotStarveShipwrecked.key
 URL_JKS=https://git.12399.xyz/files/appkey/hei.kleientertainment.doNotStarveShipwrecked.jks
-URL_APP=https://sj.71acg.com/hykb/201911/20191126jhht1.27.apk
-URL_OBB=https://sj.71acg.com/hykb/shujubao/main.50.com.kleientertainment.doNotStarveShipwrecked.obb
+URL_APP=http://sj.71acg.com/hykb/202101/20210105dontstarveship.apk
+URL_OBB=http://sj.71acg.com/hykb/202101/main.51.com.kleientertainment.doNotStarveShipwrecked.obb
 URL_OPH=https://hub.fastgit.org/cnzixn/bmsh-patch/archive/GIT$GIT_OPH.zip
 
 APP_SIGN=hei.kleientertainment.doNotStarveShipwrecked
@@ -587,7 +587,7 @@ function add_to_obb() {
 	fi
 	new=$(7z l "$PATH_OBB" "mods/BM0000/" | grep -Eo "BM[0-9]+" | tr ' ' '\n' | uniq | sort -n)
 	if [ ! $new ]; then
-		ext=" $GIT_OPH 999999 "
+		ext=" $GIT_OPH 110000 111001 "
 	fi
 	rm -rf temp.zip temp
 	mkdir -p temp
