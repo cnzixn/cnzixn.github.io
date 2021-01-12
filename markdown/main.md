@@ -22,7 +22,7 @@
 
 #### 教程  
 
-##### [![bili image](https://git.12399.xyz/images/bili.png)][TV000]  
+##### [![bili image](../images/bili.png)][TV000]  
 
 ------
 
@@ -419,7 +419,7 @@ MT管理器(2.9.4)　[[下载]][APK294]
 
 #### 赞助  
 
-##### ![pay image](https://git.12399.xyz/images/pay.png)  
+##### ![pay image](../images/pay.png)  
 ##### 长按保存→扫码→相册选取  
   
 注：请尽量在“试用期”内赞助，以免影响你正常使用BM0000的“专属优化”。赞助后请私聊本人处理，本人会在24小时内给你回复。
@@ -435,19 +435,19 @@ MT管理器(2.9.4)　[[下载]][APK294]
 
 [注释]: 网页内容到此结束，以下全为链接。
 
-[WWW1]: https://git.12399.xyz/markdown/get.html?url=logs
-[WWW2]: https://git.12399.xyz/markdown/get.html?url=0000
-[WWW3]: https://git.12399.xyz/markdown/get.html?url=help
-[WWW4]: https://git.12399.xyz/mods.html
+[WWW1]: ../markdown/get.html?url=logs
+[WWW2]: ../markdown/get.html?url=0000
+[WWW3]: ../markdown/get.html?url=help
+[WWW4]: ../mods.html
 
 
 
 [TV000]: https://b23.tv/AeaOpL
-[TV001]: https://git.12399.xyz/videos/jiaocheng01.mp4
-[TV002]: https://git.12399.xyz/videos/jiaocheng02.mp4
-[TV003]: https://git.12399.xyz/videos/jiaocheng03.mp4
-[TV004]: https://git.12399.xyz/videos/jiaocheng04.mp4
-[TV005]: https://git.12399.xyz/videos/jiaocheng05.mp4
+[TV001]: ../videos/jiaocheng01.mp4
+[TV002]: ../videos/jiaocheng02.mp4
+[TV003]: ../videos/jiaocheng03.mp4
+[TV004]: ../videos/jiaocheng04.mp4
+[TV005]: ../videos/jiaocheng05.mp4
 
 
 
