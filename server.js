@@ -11,7 +11,7 @@ var server = http.createServer(function(req, res) {
         urlpath = '/index.html';
 
     var file = root + urlpath;
-    console.log(urlpath,file);
+    //console.log(urlpath,file);
 
     fs.readFile(file, function(err, data) {
         if (err) {
