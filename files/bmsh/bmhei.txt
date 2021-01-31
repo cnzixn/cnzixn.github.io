@@ -24,7 +24,7 @@
 #    移除模组                 rm_to_obb ...
 #==================================================#
 
-BM_VER_HEI=3.5.2
+BM_VER_HEI=3.5.3
 BM_VER_KEY=210101
 BM_VER_JKS=210101
 BM_VER_APP=210101
@@ -47,7 +47,7 @@ URL_OPH=https://hub.fastgit.org/cnzixn/bmsh-patch/archive/GIT$GIT_OPH.zip
 APP_SIGN=hei.kleientertainment.doNotStarveShipwrecked
 
 KLEI_VER_HEI=51
-KLEI_VER_BAI=50
+KLEI_VER_BAI=51
 KLEI_OBB=main.$KLEI_VER_HEI.com.kleientertainment.doNotStarveShipwrecked
 
 PATH_OBB="/sdcard/Android/obb/bm.kleientertainment.doNotStarveShipwrecked/main.$KLEI_VER_HEI.bm.kleientertainment.doNotStarveShipwrecked.obb"
