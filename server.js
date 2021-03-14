@@ -2,6 +2,7 @@ var http = require('http');
 var url = require("url");
 var fs = require('fs');
 
+
 var root = __dirname; //current path
 
 var server = http.createServer(function(req, res) {
