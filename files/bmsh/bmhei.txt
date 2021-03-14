@@ -29,7 +29,7 @@ BM_VER_KEY=210101
 BM_VER_JKS=210101
 BM_VER_APP=210101
 BM_VER_OBB=210101
-BM_VER_OPH=210101
+BM_VER_OPH=210301
 
 SIZE_KEY=1000
 SIZE_JKS=1000
@@ -37,7 +37,8 @@ SIZE_APP=6882330
 SIZE_OBB=521631691
 SIZE_OPH=7654321
 
-GIT_OPH=100128
+GIT_OPH=110128
+
 URL_KEY=https://git.12399.xyz/files/appkey/hei.kleientertainment.doNotStarveShipwrecked.key
 URL_JKS=https://git.12399.xyz/files/appkey/hei.kleientertainment.doNotStarveShipwrecked.jks
 URL_APP=http://sj.71acg.com/hykb/202101/20210105dontstarveship.apk
