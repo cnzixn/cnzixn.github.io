@@ -853,8 +853,8 @@ ShipWrecked.OBB(1.28)　[[下载]][OBB128]
 [FST-100123]: https://hub.fastgit.org/cnzixn/bmsh-patch/archive/GIT100123.zip
 [FST-100128]: https://hub.fastgit.org/cnzixn/bmsh-patch/archive/GIT100128.zip
 
-[FST-110123]: https://github.com/cnzixn/bmsh-patch/archive/GIT110123.zip
-[FST-110128]: https://github.com/cnzixn/bmsh-patch/archive/GIT110128.zip
+[FST-110123]: https://hub.fastgit.org/cnzixn/bmsh-patch/archive/GIT110123.zip
+[FST-110128]: https://hub.fastgit.org/cnzixn/bmsh-patch/archive/GIT110128.zip
 
 [FST-110000]: https://hub.fastgit.org/cnzixn/bmsh-patch/archive/GIT110000.zip
 [FST-111000]: https://hub.fastgit.org/cnzixn/bmsh-patch/archive/GIT111000.zip

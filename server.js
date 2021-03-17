@@ -33,7 +33,7 @@ var server = http.createServer(function(req, res) {
 
 }).listen(8080); //http.createServer
 
-console.log('http is OK ==> http://127.0.0.1:8888/');
+console.log('http is OK ==> http://127.0.0.1:8080/');
 
 //
 // ip -4 -br -c addr | grep "rmnet0" | awk '{print $3}' | sed 's/\(\/.*\)//g'
