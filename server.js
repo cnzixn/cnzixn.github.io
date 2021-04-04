@@ -31,11 +31,11 @@ var server = http.createServer(function(req, res) {
         }
     }); //fs.readFile
 
-}).listen(8080); //http.createServer
+}).listen(8888); //http.createServer
 
-console.log('http is OK ==> http://127.0.0.1:8080/');
+console.log('http is OK ==> http://127.0.0.1:8888/');
 
 //
 // ip -4 -br -c addr | grep "rmnet0" | awk '{print $3}' | sed 's/\(\/.*\)//g'
 // ip -6 -br -c addr | grep "rmnet0" | awk '{print $3}' | sed 's/\(\/.*\)//g'
-//
+//樱花内网穿透 https://www.natfrp.com/tunnel/#

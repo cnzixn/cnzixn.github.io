@@ -1,11 +1,15 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
+
+
+
+
 #==================================================#
 # 备用信息
 #
 #    bash /sdcard/0DontStarve/bmsh/bmhei.txt
 #
-#    pkg i lua wget p7zip apksigner -y
+#    pkg i wget p7zip apksigner -y
 #
 #    main.xx.com.kleientertainment.doNotStarveShipwrecked.obb
 #

@@ -9,8 +9,20 @@
 	<link rel="stylesheet" href="./css/typo200928.css" type="text/css">
 	<style>
 		#i {
-			width: 80%;
+			width: 79%;
+			height: 32px
+			float: left;
+			border:0;
+			outline: none;
+			padding: 3;
+		}
+		#b {
+			width: 19%;
 			height: 30px
+			float: left;
+			border:0;
+			outline: none;
+			padding: 3;
 		}
 	</style>
 	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
@@ -31,7 +43,7 @@
 				e = document.getElementById("i").value,
 				t = e && e || t; - 1 != e.toLowerCase().indexOf("steamcommunity.com") && (t = GetUrlParam(e, "id")), $.getJSON("https://5.5w.pw/api?mid=" + t, function (tt) {
 				if(tt.code == "200") {
-					$("#content").html("<p><br />编号：" + tt.mid + "<br />名称：" + tt.title.substring(0, 20) + '...<br />链接：<a href="' + tt.url + '">' + tt.url.substring(0, 32) + "...</a><br /></p>")
+					$("#content").html("<pre><br />编号：" + tt.mid + "<br />名称：" + tt.title + '<br />链接：<a href="' + tt.url + '">' + tt.url + "</a><br /></pre>")
 				} else {
 					$("#content").html('<p class="center"><br /><br />未找到相关模组!<br /><br /></p>')
 				}
@@ -50,9 +62,8 @@
 		<div>
 			<h1 class="center">STEAM MODS DOWNLOAD</h1>
 			<br>
-			<input class="circle" type="text" id="i" placeholder="输入ID或链接(默认:1697986974)...">
-			<button class="circle" onclick="sb()">搜索</button>
-			<div id="content"></div>
+			<div id="content"><input class="circle" type="text" id="i" placeholder="输入ID或链接(默认:1697986974)...">
+			<button class="circle" id="b" onclick="sb()">搜索</button></div>
 		</div>
 </body>
 
