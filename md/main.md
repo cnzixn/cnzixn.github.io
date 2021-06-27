@@ -4,13 +4,13 @@
   
 ------
   
-  #### 声明
+#### 声明
   
-　免费：兔人框架以及相关补丁的下载与使用完全免费，不要来找我***购买***文件。  
-　赞助：喜欢就赞助，不喜欢就白嫖。框架的***专属***优化需要赞助，不喜欢请删除。  
-　加密：防止模组文件遭***篡改***被随意贩卖；防止模组文件因***搬运***而版本混乱。  
-　维护：任何补丁的问题都请联系***兔人协会***，一切问题与补丁***原作者***无关。  
-　版权：任何补丁的版权毫无疑问归属于***原作者***，***兔人协会***只是对这些补丁进行整理、维护、分享。  
+　【免费】：兔人框架的主要功能、移植而来的补丁**永久免费**，不要找任何人**购买**。  
+　【赞助】：喜欢就赞助，不喜欢就白嫖。框架的**专属优化**需要赞助，不喜欢请删除。  
+　【加密】：防止模组文件遭**篡改**被随意贩卖；防止模组文件因**搬运**而版本混乱。  
+　【维护】：任何补丁的问题都请联系**兔人协会**，一切问题与补丁**原作者**无关。  
+　【版权】：**原作者**拥有任何补丁的版权，**兔人协会**只对补丁进行整理、维护、分享。  
   
 ------
   
@@ -20,38 +20,38 @@
 [[614255348]][QQG614]：综合，限时开放。除了饥荒啥都聊，不建议新人加入。  
 [[556106293]][QQG556]：广播，全体禁言。发布文件更新通知，建议新人加入。  
   
-  ------
+------
   
-  #### 教程  
+#### 教程  
   
-  [五分钟玩转饥荒模组.TXT](./bmjc.html)
+[五分钟玩转饥荒模组.TXT](./bmjc.html)
   
-  ------
+------
   
-  #### 工具  
+#### 工具  
   
-  MT管理器　[[下载]][APKMT2]  
+MT管理器　[[下载]][APKMT2]  
   
-  -----
+-----
   
-  #### 游戏  
+#### 游戏  
   
-  >好游快爆试玩版，有条件请购买正版  
+>好游快爆试玩版，有条件请购买正版  
   
-  ShipWrecked.APK(1.28)　[[下载]][APK128]  
+ShipWrecked.APK(1.28)　[[下载]][APK128]  
 ShipWrecked.OBB(1.28)　[[下载]][OBB128]  
   
-  -----
+-----
   
-  #### 框架  
+#### 框架  
   
-  >新版21.06.01请加群[[556106293]][QQG556]参与测试
+>新版21.06.01请加群[[556106293]][QQG556]参与测试
   
-  110128.兔人框架(1.28)　[[下载1]][GHT-110128]　[[下载2]][GIT-110128]  
+110128.兔人框架(1.28)　[[下载1]][GHT-110128]　[[下载2]][GIT-110128]  
   
-  -----
+-----
   
-  #### 补丁  
+#### 补丁  
   
 111000.原版字体　[[下载1]][GHT-111000]　[[下载2]][GIT-111000]  
 111001.像素字体　[[下载1]][GHT-111001]　[[下载2]][GIT-111001]  
@@ -419,31 +419,31 @@ ShipWrecked.OBB(1.28)　[[下载]][OBB128]
 0359.(人物)宝石萝莉-补丁　[[下载1]][GHT-0359]　[[下载2]][GIT-0359]　[[简介]][MBD-0359]  
 0360.手柄操作优化　[[下载1]][GHT-0360]　[[下载2]][GIT-0360]　[[简介]][MBD-0360]  
   
-  ------
+------
   
-  #### 赞助  
+#### 赞助  
   
-  ##### ![pay image](../images/bpay.png =80%x*)  
+##### ![pay image](../images/bpay.png =80%x*)  
 ##### 长按保存→扫码→相册选取  
   
-  ------
+------
   
-  [[更新日志]][WWW1]　[[常见问题]][WWW3]
+[[更新日志]][WWW1]　[[常见问题]][WWW3]
   
-  ------
+------
   
   
   
   
 [注释]: 网页内容到此结束，以下全为链接。
   
-  [WWW1]: ./logs.html
+[WWW1]: ./logs.html
 [WWW2]: ./0000.html
 [WWW3]: ./help.html
   
   
   
-  [TV000]: https://b23.tv/AeaOpL
+[TV000]: https://b23.tv/AeaOpL
 [TV001]: ../videos/jiaocheng01.mp4
 [TV002]: ../videos/jiaocheng02.mp4
 [TV003]: ../videos/jiaocheng03.mp4
@@ -452,13 +452,13 @@ ShipWrecked.OBB(1.28)　[[下载]][OBB128]
   
   
   
-  [QQG777]: mqqopensdkapi://bizAgent/qm/qr?url=http://qm.qq.com/cgi-bin/qm/qr%3Ffrom=app%26p=android%26k=MNbFabUJEtYKRckugDrWITaD_hvJk1uT
+[QQG777]: mqqopensdkapi://bizAgent/qm/qr?url=http://qm.qq.com/cgi-bin/qm/qr%3Ffrom=app%26p=android%26k=MNbFabUJEtYKRckugDrWITaD_hvJk1uT
 [QQG614]: mqqopensdkapi://bizAgent/qm/qr?url=http://qm.qq.com/cgi-bin/qm/qr%3Ffrom=app%26p=android%26k=KnkVjjF7OiwDcpO3WG6vXXTVn2bicq0J
 [QQG556]: mqqopensdkapi://bizAgent/qm/qr?url=http://qm.qq.com/cgi-bin/qm/qr%3Ffrom=app%26p=android%26k=1x8UWTmLfQVjdcpP8SRhLWdO8j_LICqt
   
   
   
-  [APKMT2]: http://d.mt2.cn/
+[APKMT2]: http://d.mt2.cn/
 [APK294]: https://dl.mt2.cn/MT2.9.4.apk
 [APK295]: https://dl.mt2.cn/MT2.9.5.apk
 [APK296]: https://dl.mt2.cn/MT2.9.6.apk
@@ -467,10 +467,10 @@ ShipWrecked.OBB(1.28)　[[下载]][OBB128]
 [APK128]: http://sj.71acg.com/hykb/202101/20210105dontstarveship.apk
 [OBB128]: http://sj.71acg.com/hykb/202101/main.51.com.kleientertainment.doNotStarveShipwrecked.obb
   
-  [APK127]: https://sj.71acg.com/hykb/201911/20191126jhht1.27.apk
+[APK127]: https://sj.71acg.com/hykb/201911/20191126jhht1.27.apk
 [OBB127]: https://sj.71acg.com/hykb/shujubao/main.50.com.kleientertainment.doNotStarveShipwrecked.obb
   
-  [APK123]: https://sj.71acg.com/hykb/201906/20190621jhhn1.23.apk
+[APK123]: https://sj.71acg.com/hykb/201906/20190621jhhn1.23.apk
 [OBB123]: https://sj.71acg.com/hykb/shujubao/main.38.com.kleientertainment.doNotStarveShipwrecked.obb
   
   
@@ -479,17 +479,17 @@ ShipWrecked.OBB(1.28)　[[下载]][OBB128]
 [GIT-100123]: https://github.com/cnzixn/bmsh-patch/archive/GIT100123.zip
 [GIT-100128]: https://github.com/cnzixn/bmsh-patch/archive/GIT100128.zip
   
-  [GIT-110123]: https://github.com/cnzixn/bmsh-patch/archive/GIT110123.zip
+[GIT-110123]: https://github.com/cnzixn/bmsh-patch/archive/GIT110123.zip
 [GIT-110128]: https://github.com/cnzixn/bmsh-patch/archive/GIT110128.zip
   
-  [GIT-110000]: https://github.com/cnzixn/bmsh-patch/archive/GIT110000.zip
+[GIT-110000]: https://github.com/cnzixn/bmsh-patch/archive/GIT110000.zip
 [GIT-111000]: https://github.com/cnzixn/bmsh-patch/archive/GIT111000.zip
 [GIT-111001]: https://github.com/cnzixn/bmsh-patch/archive/GIT111001.zip
 [GIT-111002]: https://github.com/cnzixn/bmsh-patch/archive/GIT111002.zip
   
   
   
-  [GIT-0001]: https://github.com/cnzixn/bmsh-mods1/archive/GIT0001.zip
+[GIT-0001]: https://github.com/cnzixn/bmsh-mods1/archive/GIT0001.zip
 [GIT-0002]: https://github.com/cnzixn/bmsh-mods1/archive/GIT0002.zip
 [GIT-0003]: https://github.com/cnzixn/bmsh-mods1/archive/GIT0003.zip
 [GIT-0004]: https://github.com/cnzixn/bmsh-mods1/archive/GIT0004.zip
@@ -852,18 +852,18 @@ ShipWrecked.OBB(1.28)　[[下载]][OBB128]
   
   
   
-  [GHT-100123]: https://ghproxy.com/https://github.com/cnzixn/bmsh-patch/archive/GIT100123.zip
+[GHT-100123]: https://ghproxy.com/https://github.com/cnzixn/bmsh-patch/archive/GIT100123.zip
 [GHT-100128]: https://ghproxy.com/https://github.com/cnzixn/bmsh-patch/archive/GIT100128.zip
   
-  [GHT-110123]: https://ghproxy.com/https://github.com/cnzixn/bmsh-patch/archive/GIT110123.zip
+[GHT-110123]: https://ghproxy.com/https://github.com/cnzixn/bmsh-patch/archive/GIT110123.zip
 [GHT-110128]: https://ghproxy.com/https://github.com/cnzixn/bmsh-patch/archive/GIT110128.zip
   
-  [GHT-110000]: https://ghproxy.com/https://github.com/cnzixn/bmsh-patch/archive/GIT110000.zip
+[GHT-110000]: https://ghproxy.com/https://github.com/cnzixn/bmsh-patch/archive/GIT110000.zip
 [GHT-111000]: https://ghproxy.com/https://github.com/cnzixn/bmsh-patch/archive/GIT111000.zip
 [GHT-111001]: https://ghproxy.com/https://github.com/cnzixn/bmsh-patch/archive/GIT111001.zip
 [GHT-111002]: https://ghproxy.com/https://github.com/cnzixn/bmsh-patch/archive/GIT111002.zip
   
-  [GHT-0001]: https://ghproxy.com/https://github.com/cnzixn/bmsh-mods1/archive/GIT0001.zip
+[GHT-0001]: https://ghproxy.com/https://github.com/cnzixn/bmsh-mods1/archive/GIT0001.zip
 [GHT-0002]: https://ghproxy.com/https://github.com/cnzixn/bmsh-mods1/archive/GIT0002.zip
 [GHT-0003]: https://ghproxy.com/https://github.com/cnzixn/bmsh-mods1/archive/GIT0003.zip
 [GHT-0004]: https://ghproxy.com/https://github.com/cnzixn/bmsh-mods1/archive/GIT0004.zip
@@ -1226,7 +1226,7 @@ ShipWrecked.OBB(1.28)　[[下载]][OBB128]
   
   
   
-  [MBD-0000]: https://mianbaoduo.com/o/bread/Z5WZmJ8=
+[MBD-0000]: https://mianbaoduo.com/o/bread/Z5WZmJ8=
 [MBD-0001]: https://mianbaoduo.com/o/bread/Z5WZmJc=
 [MBD-0002]: https://mianbaoduo.com/o/bread/Z5WZmZo=
 [MBD-0003]: https://mianbaoduo.com/o/bread/Z5WamZo=
