@@ -176,7 +176,7 @@ mark {
 
 /* 代码片断 */
 pre, code, pre tt {
-  font-family: Courier, 'Courier New', monospace;
+  font-family: Comic Sans MS, 'Courier New', monospace;
 }
 
 pre {
@@ -364,36 +364,28 @@ https://typo.sofi.sh
 git..12399..xyz
 */
 
-html { background:#999; }
+html { }
 
-body { color: #CCC; max-width: 960px; background:#336666; margin: 5px; padding: 8px 25px; border-radius: 16px; word-wrap:break-word; word-break:break-all;}
+body { max-width: 100% ; margin: 5px; padding: 8px 25px; border: solid #ccc 1px ; border-radius: 16px; word-wrap:break-word; word-break:break-all; }
 
-h1, h3 , h5 { color: #CCC; text-align: center; }
+img {
+  border: solid #ccc 1px ; border-radius: 16px; vertical-align: middle
+}
 
-h2, h4, h6 { color: #CCC; }
+h1, h3 , h5 { text-align: center; }
 
-.typo em { color: #CCC; }
+h2, h4, h6 { }
+
+.typo em { }
 
 .typo a { color: #3399FF; border-bottom: 0; }
 
 .typo li { list-style-type: none; margin: 0 0 0 -20px; }
 
-.center { text-align: center; }
-
-.circle{
-  padding: 3px 5px;
-  display: inline-block;
-  /* margin-left: 20px; */
-  -webkit-border-radius:6px;/*适配以webkit为核心的浏览器(chrome、safari等)*/
-  -moz-border-radius:6px;/*适配firefox浏览器*/
-  -ms-border-radius:6px;/*适配IE浏览器*/
-  -o-border-radius:6px;/*适配opera浏览器*/
-  border-radius:6px;/*适配所有浏览器*/
-  border: 1px solid #C6C4C4;
-  outline: none;
+.typo pre{
+    max-width: 100% ;
+    font-size: 0.8em;
+    overflow: auto;
 }
 
-pre{
-    white-space: pre-wrap;
-    word-wrap: break-word;
-}
+

@@ -26,7 +26,6 @@
 
 [注释]: 网页内容到此结束，以下全为链接。
 
-[WWW1]: ../markdown/get.html?url=logs
-[WWW2]: ../markdown/get.html?url=0000
-[WWW3]: ../markdown/get.html?url=help
-[WWW4]: ../mods.html
+[WWW1]: ./html/logs.html
+[WWW2]: ./html/0000.html
+[WWW3]: ./html/help.html
